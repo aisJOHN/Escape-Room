@@ -1,3 +1,4 @@
+//John is da best
 var myname;
 var myage;
 var meal1;
