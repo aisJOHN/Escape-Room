@@ -105,8 +105,11 @@ function setup()
   FAILLOCK = false;
   SUCCESS = 0;
   
+  K = 200;
   L = 50;
+  M = 50;
   Growth = 0;
+  UP = 0;
   
 }
 
@@ -1354,6 +1357,8 @@ function Stretchbox()
 {
   cursor(ARROW);
   
+  //Going Down
+  
   rect(1200,200,50,L);
   
   if (mouseX > 1200 && mouseX < 1200+50 && mouseY > 200 && mouseY < 200+50)
@@ -1382,6 +1387,42 @@ function Stretchbox()
     L = 100;
     rect(1200,200,50,L);
   }
+  
+  //Going Up
+  //K,200
+  //M,50
+  rect(1300,K,50,M)
+  
+  if (mouseX > 1300 && mouseX < 1300+50 && mouseY > 200 && mouseY < 200+50)
+  {
+    cursor(HAND);
+
+    if (mouseIsPressed == true)
+    {
+      UP = 1;
+    }
+
+  }
+
+  if (UP == 1)
+  {
+    K = K - 1;
+    M = M + 1;
+    
+    if (M > 100 && K < 100)
+    {
+      UP = 2;
+    }
+  
+  }
+
+  if (UP == 2)
+  {
+    K = 100;
+    M = 150;
+    rect(1300,K,50,M);
+  }
+  
 }
 
 function mouseReleased()
