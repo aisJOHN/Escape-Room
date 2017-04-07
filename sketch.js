@@ -1252,6 +1252,7 @@ function Fail()
   {
     fill(200,0,0);
     rect(800,400,50,50)
+    fill(255,255,255);
     
     if (mouseIsPressed == true && LOCKRed == false)
     {
@@ -1356,7 +1357,7 @@ function Fail()
 function Stretchbox()
 {
   cursor(ARROW);
-  
+  fill(255,255,255);
   //Going Down
   
   rect(1200,200,50,L);
