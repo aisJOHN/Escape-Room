@@ -1,13 +1,10 @@
 function preload() 
 {
-  
   Couch = loadImage ('https://dl.dropboxusercontent.com/s/oprlxxv3tkhbs0f/Couch.png')
   Spark = loadImage('https://dl.dropboxusercontent.com/s/7hjyj2xnovqdt5v/Spark.png')
   Bomb = loadImage('https://dl.dropboxusercontent.com/s/k6m1d32oujox3kx/Bomb.png')
   Explosion = loadImage('https://dl.dropboxusercontent.com/s/tiktdzd3oqmcpl2/Explosion.png')
-  
 }
-
 
 function setup()
 {
@@ -109,8 +106,7 @@ function setup()
   L = 50;
   M = 50;
   Growth = 0;
-  UP = 0;
-  
+  UP = 0; 
 }
 
 function draw()
@@ -132,7 +128,6 @@ function draw()
   Fail();
   
   Stretchbox();
-  
 }
 
 function Combination()
@@ -146,7 +141,6 @@ function Combination()
 
   if (mouseX > 75 && mouseX < 75+25 && mouseY > 50 && mouseY < 50+25)
   {
-
     fill(200,200,200);
     rect(75,50,25,25);
 
@@ -158,7 +152,6 @@ function Combination()
       HALTA = true;
 
       A = A + 1;
-
     }
   }
 
@@ -177,35 +170,27 @@ function Combination()
 
   if (mouseX > 75 && mouseX < 75+25 && mouseY > 175 && mouseY < 175+25)
   {
-
     fill(200,200,200);
     rect(75,175,25,25);
 
     if (mouseIsPressed == true && HALTB == false)
     {
-
       fill(250,250,250);
       rect(75,175,25,25);
       HALTB = true;
 
       A = A - 1;
-
     }
-
   }
 
   if (A > 9)
   {
-
     A = 0;
-
   }
 
   if (A < 0)
   {
-
     A = 9;
-
   }
 
   //Input 2
@@ -216,19 +201,16 @@ function Combination()
 
   if (mouseX > 75+100 && mouseX < 75+125 && mouseY > 50 && mouseY < 50+25)
   {
-
     fill(200,200,200);
     rect(75+100,50,25,25);
 
     if (mouseIsPressed == true && HALTC == false)
     {
-
       fill(250,250,250);
       rect(75+100,50,25,25);
       HALTC = true;
 
       B = B + 1;
-
     }
   }
 
@@ -247,34 +229,27 @@ function Combination()
 
   if (mouseX > 75+100 && mouseX < 75+125 && mouseY > 175 && mouseY < 175+25)
   {
-
     fill(200,200,200);
     rect(75+100,175,25,25);
 
     if (mouseIsPressed == true && HALTD == false)
     {
-
       fill(250,250,250);
       rect(75+100,175,25,25);
       HALTD = true;
 
       B = B - 1;
-
     }
   }
 
   if (B > 9)
   {
-
     B = 0;
-
   }
 
   if (B < 0)
   {
-
     B = 9;
-
   }
 
   //Input 3
@@ -285,19 +260,16 @@ function Combination()
 
   if (mouseX > 75+200 && mouseX < 75+225 && mouseY > 50 && mouseY < 50+25)
   {
-
     fill(200,200,200);
     rect(75+200,50,25,25);
 
     if (mouseIsPressed == true && HALTE == false)
     {
-
       fill(250,250,250);
       rect(75+200,50,25,25);
       HALTE = true;
 
       C = C + 1;
-
     }
   }
 
@@ -316,46 +288,38 @@ function Combination()
 
   if (mouseX > 75+200 && mouseX < 75+225 && mouseY > 175 && mouseY < 175+25)
   {
-
     fill(200,200,200);
     rect(75+200,175,25,25);
 
     if (mouseIsPressed == true && HALTF == false)
     {
-
       fill(250,250,250);
       rect(75+200,175,25,25);
       HALTF = true;
 
       C = C - 1;
-
     }
   }
 
   if (C > 9)
   {
-
     C = 0;
-
   }
 
   if (C < 0)
   {
-
     C = 9;
-
   }
 
   if (A == 5 && B == 8 && C == 6)
   {
-
     fill(0,0,0);
     text("Unlocked",62.5+100,250);
-
   }
   
   fill(0,0,0);
   text("5 - 8 - 6", 10,130);
+
 }
 
 function Slider()
@@ -376,34 +340,26 @@ function Slider()
   text("Enter",285,380);
 
   if (mouseX > 250 && mouseX < 250+100 && mouseY > 362.5 && mouseY < 362.5+25)
-
   {
-
     fill(0,0,255);
     rect(250,362.5,100,25);
     fill(0,0,0);
     text("Enter",285,380);
 
     if (mouseIsPressed == true)
-
     {
-
       fill(255,0,0);
       rect(250,362.5,100,25);
       fill(0,0,0);
       text("Enter",285,380);
 
       if (Number1.value() == 3 && Number2.value() == 1 && Number3.value() == 4)
-
       {
-
         fill(0,255,0);
         rect(250,362.5,100,25);
         fill(0,0,0);
         text("Enter",285,380);
-
       }
-
     }
   }
   
@@ -414,7 +370,6 @@ function Slider()
 
 function Piano()
 {
-  {
     
 //White Keys
   fill(255,255,255);
@@ -451,7 +406,6 @@ function Piano()
     
     if (mouseIsPressed == true && LOCKD == false)
     {
-
       fill(150,150,150);
       rect(100+30,500,30,100);
       fill(255,255,255);
@@ -460,7 +414,6 @@ function Piano()
       WORD = WORD + "D";
 
       LOCKD = true;
-
     }
   }
   
@@ -475,7 +428,6 @@ function Piano()
     
     if (mouseIsPressed == true && LOCKE == false)
     {
-
       fill(150,150,150);
       rect(100+60,500,30,100);
       fill(255,255,255);
@@ -498,7 +450,6 @@ function Piano()
     
     if (mouseIsPressed == true && LOCKF == false)
     {
-
       fill(150,150,150);
       rect(100+90,500,30,100);
       fill(255,255,255);
@@ -507,7 +458,6 @@ function Piano()
       WORD = WORD + "F";
 
       LOCKF = true;
-      
     }
   }
   
@@ -522,7 +472,6 @@ function Piano()
     
     if (mouseIsPressed == true && LOCKG == false)
     {
-
       fill(150,150,150);
       rect(100+120,500,30,100);
       fill(255,255,255);
@@ -531,7 +480,6 @@ function Piano()
       WORD = WORD + "G";
 
       LOCKG = true;
-
     }
   }
   
@@ -546,7 +494,6 @@ function Piano()
     
     if (mouseIsPressed == true && LOCKA == false)
     {
-
       fill(150,150,150);
       rect(100+150,500,30,100);
       fill(255,255,255);
@@ -555,7 +502,6 @@ function Piano()
       WORD = WORD + "A";
       
       LOCKA = true;
-
     }
   }
   
@@ -570,7 +516,6 @@ function Piano()
     
     if (mouseIsPressed == true && LOCKB == false)
     {
-
       fill(150,150,150);
       rect(100+180,500,30,100);
       fill(255,255,255);
@@ -579,7 +524,6 @@ function Piano()
       WORD = WORD + "B";
 
       LOCKB = true;
-
     }
   }
     
@@ -681,7 +625,7 @@ function Piano()
   text("A",112.5+150,592.5);
   text("B",112.5+180,592.5);
   
-  }
+}
   
   fill(255,255,255);
   rect(350,500,100,25);
@@ -712,7 +656,6 @@ function Piano()
         fill(0,0,0);
         WORD = "";
       }
-      
     }
   }
   
@@ -822,7 +765,6 @@ function Painting()
     PPP = PPP - 1;
     fill(255,3,255);
     rect(OOO,PPP,50,50);
-    
   }
 
   if (AAA > 500 && CCC > 550 && FFF > 200 && HHH > 250 && III < 500 && KKK < 450 && NNN < 200 && PPP < 150)
@@ -1221,8 +1163,6 @@ function Painting()
     fill(0,0,0)
     rect(500,200,50,50);
   }
-  fill(0,0,0);
-  text("April 18",500,600);
 
 }
 
@@ -1239,6 +1179,7 @@ function Pin()
       text("hello", 800,150);
     }
   }
+  
 }
 
 function Fail()
@@ -1352,6 +1293,7 @@ function Fail()
     fill(0,0,0);
     text("HAPPY BIRTHDAY!",875,600);
   }
+
 }
 
 function Stretchbox()
@@ -1370,7 +1312,6 @@ function Stretchbox()
     {
       Growth = 1;
     }
-    
   }
   
   if (Growth == 1)
@@ -1402,7 +1343,6 @@ function Stretchbox()
     {
       UP = 1;
     }
-
   }
 
   if (UP == 1)
@@ -1414,7 +1354,6 @@ function Stretchbox()
     {
       UP = 2;
     }
-  
   }
 
   if (UP == 2)
@@ -1512,7 +1451,6 @@ function mouseReleased()
   {
     FAILLOCK = false;
   }
-  
 }
 
 function Inventory()
@@ -1535,6 +1473,5 @@ function Inventory()
   rect(10+360,607,80,80);
   
   strokeWeight(1);
-  
 }
 
