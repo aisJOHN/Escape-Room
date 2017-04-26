@@ -108,6 +108,18 @@ function setup()
   M = 50;
   Growth = 0;
   UP = 0;
+  
+  Block1 = 0;
+  Block1Lock = false;
+  
+  Block2 = 0;
+  Block2Lock = false;
+  
+  Block3 = 0;
+  Block3Lock = false;
+  
+  Block4 = 0;
+  Block4Lock = false;
 }
 
 function draw()
@@ -129,6 +141,8 @@ function draw()
   Fail();
   
   Stretchbox();
+  
+  ColorPuzzle();
 }
 
 function Combination()
@@ -1366,6 +1380,121 @@ function Fail()
   }
 }
 
+function ColorPuzzle()
+{
+  cursor(ARROW);
+  fill(255,255,255);
+  rect(1200,400,50,50);
+  
+  if (mouseX > 1200 && mouseX < 1200+50 && mouseY > 400 && mouseY < 400+50)
+  {
+    fill(200,0,0);
+    rect(1200,400,50,50);
+    
+    if (mouseIsPressed == true)
+    {
+      Block1 = 1;
+    }
+    
+    fill(255,255,255);
+    cursor(HAND);
+  }
+  
+  if (Block1 == 1)
+  {
+    fill(255,0,0);
+    rect(1200,400,50,50);
+    fill(255,255,255);
+  }
+  
+  rect(1300,400,50,50);
+  
+  if (mouseX > 1300 && mouseX < 1300+50 && mouseY > 400 && mouseY < 400+50)
+  {
+    fill(200,200,0);
+    rect(1300,400,50,50);
+
+    if (mouseIsPressed == true)
+    {
+      Block2 = 1;
+    }
+
+    fill(255,255,255);
+    cursor(HAND);
+  }
+  
+  if (Block2 == 1)
+  {
+    fill(255,255,0);
+    rect(1300,400,50,50);
+    fill(255,255,255);
+  }
+  
+  rect(1200,500,50,50);
+  
+  if (mouseX > 1200 && mouseX < 1200+50 && mouseY > 500 && mouseY < 500+50)
+  {
+    fill(0,200,0);
+    rect(1200,500,50,50);
+
+    if (mouseIsPressed == true)
+    {
+      Block3 = 1
+    }
+
+    fill(255,255,255);
+    cursor(HAND);
+  }
+  
+  if (Block3 == 1)
+  {
+    fill(0,255,0);
+    rect(1200,500,50,50);
+    fill(255,255,255);
+  }
+  
+  rect(1300,500,50,50);
+  
+  if (mouseX > 1300 && mouseX < 1300+50 && mouseY > 500 && mouseY < 500+50)
+  {
+    fill(0,0,200);
+    rect(1300,500,50,50);
+
+    if (mouseIsPressed == true)
+    {
+      Block4 = 1
+    }
+
+    fill(255,255,255);
+    cursor(HAND);
+  }
+  
+  if (Block4 == 1)
+  {
+    fill(0,0,255);
+    rect(1300,500,50,50);
+    fill(255,255,255);
+  }
+
+  if (Block1 == 1 && Block3 == 1 && Block4 == 1)
+  {
+    fill(0,0,0);
+    text("Unlocked",1250,600);
+    fill(255,255,255);
+  }
+  
+  rect(1225,625,100,25);
+  fill(0,0,0);
+  text("Reset",1260,642);
+  fill(255,255,255);
+  
+  if (mouseX > 1225 && mouseX < 1225+100 && mouseY > 625 && mouseY < 625+25)
+  {
+    
+  }
+  
+}
+
 function mouseReleased()
 {
   if (HALTA)
@@ -1451,6 +1580,26 @@ function mouseReleased()
   if (FAILLOCK)
   {
     FAILLOCK = false;
+  }
+  
+  if (Block1Lock)
+  {
+    Block1Lock = false;
+  }
+  
+  if (Block2Lock)
+  {
+    Block2Lock = false;
+  }
+  
+  if (Block3Lock)
+  {
+    Block3Lock = false;
+  }
+  
+  if (Block4Lock)
+  {
+    Block4Lock = false;
   }
   
 }
