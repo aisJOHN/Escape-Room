@@ -371,8 +371,8 @@ function canvas3()
       }
     }
 
-  image(Left_Arrow,4,54,96,96);
-
+    image(Left_Arrow,4,54,96,96)
+    
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
@@ -959,7 +959,6 @@ function mouseReleased()
 }
 
 function Inventory()
-
 {
   strokeWeight(5);
   fill(90,30,0);
