@@ -1,34 +1,34 @@
 function preload()
 {
-  Introduction = loadImage('https://dl.dropboxusercontent.com/s/9y1mkc2jja08xyj/How%20the%20introduction%20should%20look%20lik%20.jpg?dl=0');
+  Introduction = loadImage('https://dl.dropboxusercontent.com/s/bzchwb2ttquoyux/Introduction.jpg?dl=0');
   
-  Left_Arrow = loadImage('https://dl.dropboxusercontent.com/s/011hvcbsejp4ct3/leftarrow.png?dl=0');
+  Left_Arrow = loadImage('https://dl.dropboxusercontent.com/s/h3eipyrq514spu5/Left.png?dl=0');
 
-  Right_Arrow = loadImage('https://dl.dropboxusercontent.com/s/axoq3n71itc5f14/Right.png?dl=0');
+  Right_Arrow = loadImage('https://dl.dropboxusercontent.com/s/9koybuosm6censl/Right.png?dl=0');
   
-  Down_Arrow = loadImage('https://dl.dropboxusercontent.com/s/fyy0ytssw759l6z/Down.png?dl=0');
+  Down_Arrow = loadImage('https://dl.dropboxusercontent.com/s/std1feag2jxg72f/Down.png?dl=0');
   
-  Bedroom = loadImage('https://dl.dropboxusercontent.com/s/pzkhv4785utrdrx/Screen%20Shot%202017-05-17%20at%208.36.48%20am.jpg?dl=0');
+  Bedroom = loadImage('https://dl.dropboxusercontent.com/s/io9fdmzik5s0g7n/Bedroom.jpg?dl=0');
  
-  Keyboard = loadImage('https://dl.dropboxusercontent.com/s/orqmdta5qihzil1/Screen%20Shot%202017-05-25%20at%207.55.49%20pm.jpg?dl=0');
+  Keyboard = loadImage('https://dl.dropboxusercontent.com/s/ytj08xhnhlyng3w/Keyboard.jpg?dl=0');
   
-  FKey = loadImage('https://dl.dropboxusercontent.com/s/rawrlp27ak4dwjo/Screen%20Shot%202017-05-25%20at%207.35.55%20pm.jpg?dl=0');
+  FKey = loadImage('https://dl.dropboxusercontent.com/s/5vjjeyzm0adi0th/F%20Key.jpg?dl=0');
   
-  AKey = loadImage('https://dl.dropboxusercontent.com/s/lssnjvhz7ur4tsx/Screen%20Shot%202017-05-25%20at%207.37.17%20pm.jpg?dl=0');
+  AKey = loadImage('https://dl.dropboxusercontent.com/s/s2omkang2t0bx66/A%20Key.jpg?dl=0');
   
-  CKey = loadImage('https://dl.dropboxusercontent.com/s/1txlxzkam9dtdfn/Screen%20Shot%202017-05-25%20at%207.36.10%20pm.jpg?dl=0');
+  CKey = loadImage('https://dl.dropboxusercontent.com/s/6wzrqxvn64tmj2x/C%20Key.jpg?dl=0');
   
-  EKey = loadImage('https://dl.dropboxusercontent.com/s/9ig0ee3kamqe9gq/Screen%20Shot%202017-05-25%20at%207.36.59%20pm.jpg?dl=0');
+  EKey = loadImage('https://dl.dropboxusercontent.com/s/l8o0aiu3wvopt8t/E%20Key.jpg?dl=0');
   
-  Living_Room = loadImage('https://dl.dropboxusercontent.com/s/7fqrwv65kz9gm80/Suitcase%20puzzle.jpg?dl=0');
+  Living_Room = loadImage('https://dl.dropboxusercontent.com/s/ohcn4bp5j5kir5r/Living%20Room.jpg?dl=0');
   
-  Teddy_Bear = loadImage('https://dl.dropboxusercontent.com/s/zicsu0d6woireca/Ripped%20Teddy%20Bear%20Puzzle.jpg?dl=0')
+  Teddy_Bear = loadImage('https://dl.dropboxusercontent.com/s/vmkkrekejmof375/Teddy%20Bear%20Ripped.jpg?dl=0')
 
-  Suitcase = loadImage('https://dl.dropboxusercontent.com/s/ixqvefdw0so6hyo/Puzzle%20close%20up.jpg?dl=0')
+  Suitcase = loadImage('https://dl.dropboxusercontent.com/s/w1t0l1nf5xzcmy8/Open%20Suitcase.jpg?dl=0')
   
-  Kitchen_L = loadImage('https://dl.dropboxusercontent.com/s/mhr3nm6mk6bhbs0/Screen%20Shot%202017-05-18%20at%2012.22.58%20PM.png?dl=0');
+  Kitchen_L = loadImage('https://dl.dropboxusercontent.com/s/0prv5g6dhsgl6kh/Kitchen%20Left.png?dl=0');
   
-  Frame = loadImage('https://dl.dropboxusercontent.com/s/1y6p9qfqtb0s8wh/PNGPIX-COM-Photo-Frame-PNG-Transparent-Image-2-500x365.png?dl=0');
+  Frame = loadImage('https://dl.dropboxusercontent.com/s/9slp8ybbvq9got4/Frame.png?dl=0');
   
   //FINE
   
@@ -52,29 +52,29 @@ function preload()
   
   //FINE
   
-  Kitchen_R_O = loadImage('https://dl.dropboxusercontent.com/s/wjpldx9x6bin81y/kitchen%20%281%29%20ver%202%20%281%29.jpg?dl=0');
+  Kitchen_R_O = loadImage('https://dl.dropboxusercontent.com/s/7ew9aiqz7y18su2/Kitchen%20Right%20Original.jpg?dl=0');
   
-  Bottles_O = loadImage('https://dl.dropboxusercontent.com/s/rrmsslurf4l0cha/Close%20up%201.jpg?dl=0');
+  Bottles_O = loadImage('https://dl.dropboxusercontent.com/s/tx5amuxv7uqdacm/Bottle%20Row%20Light.jpg?dl=0');
   
-  Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/c7eycmxcegfz1bb/Close%20up%201%20%28glow%20in%20the%20dark%29%20%281%29.jpg?dl=0');
+  Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/7iom0zwreqfk7nk/Bottle%20Row%20Dark.jpg?dl=0');
   
-  Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/4pnum22skm8dm25/Close%20up%202.jpg?dl=0');
+  Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/pttitjkz0g3i3g0/Light%20Switch.jpg?dl=0');
   
-  Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/qz9amvdq5jehxj9/kitchen.jpg?dl=0');
+  Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/bjowsiekewkca3f/Kitchen%20Right%20Dark.jpg?dl=0');
   
-  Sink = loadImage('https://dl.dropboxusercontent.com/s/i06voclfdzczc0v/Broken%20glass.jpg');
+  Sink = loadImage('https://dl.dropboxusercontent.com/s/jc80fdh0twftygw/Sink.jpg?dl=0');
 
-  Key = loadImage('https://dl.dropboxusercontent.com/s/inz863ta9i1p5po/Key.png?dl=0');
+  Key = loadImage('https://dl.dropboxusercontent.com/s/pss1qqeq8ajxhvf/Key.png?dl=0');
   
-  Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/kl2l33qhn5fxqwp/kitchen%20%281%29%20ver%202.jpg?dl=0');
+  Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/kw1j0quu24wcssg/Kitchen%20Right%20Solved.jpg?dl=0');
 
-  Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/piy467osinc6068/rt43h5321.png?dl=0');
+  Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/e837kjy07cfkxp6/Fridge%20Locked.jpg?dl=0');
 
-  Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/4vgj3zxb2644ixs/FGTR1845QF_g_oe_511x473.png?dl=0');
+  Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/vcupoah50vdmfi8/Fridge%20Open.jpg?dl=0');
 
-  Small_Note = loadImage('https://dl.dropboxusercontent.com/s/cgqlldg4wqngvb5/post-it-note-clipart-clipart-kid-post-it-clip-art-298_288.png?dl=0');
+  Small_Note = loadImage('https://dl.dropboxusercontent.com/s/e83ia9zur2s7gj8/Note.png?dl=0');
 
-  Clue = loadImage('https://dl.dropboxusercontent.com/s/e5l3xrit4os6411/FACE%20clue.png?dl=0');
+  Clue = loadImage('https://dl.dropboxusercontent.com/s/higvswdonkjetsc/Clue.png?dl=0');
 }
 
 function setup()
