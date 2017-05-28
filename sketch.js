@@ -1,86 +1,109 @@
 function preload()
 {
-  Introduction = loadImage('https://dl.dropboxusercontent.com/s/4mlb43p1ilhpkc4/Introduction.jpg?dl=0')
+  Introduction = loadImage('https://dl.dropboxusercontent.com/s/9y1mkc2jja08xyj/How%20the%20introduction%20should%20look%20lik%20.jpg?dl=0');
   
-  Left_Arrow = loadImage('https://dl.dropboxusercontent.com/s/sbj77q215p5ji5v/Left.png')
+  Left_Arrow = loadImage('https://dl.dropboxusercontent.com/s/011hvcbsejp4ct3/leftarrow.png?dl=0');
 
-  Right_Arrow = loadImage('https://dl.dropboxusercontent.com/s/5erawmheo7va7bm/Right.png')
+  Right_Arrow = loadImage('https://dl.dropboxusercontent.com/s/axoq3n71itc5f14/Right.png?dl=0');
   
-  Down_Arrow = loadImage('https://dl.dropboxusercontent.com/s/j5hdquae32335rh/Down.png?dl=0')
+  Down_Arrow = loadImage('https://dl.dropboxusercontent.com/s/fyy0ytssw759l6z/Down.png?dl=0');
   
-  Bedroom = loadImage('https://dl.dropboxusercontent.com/s/dxxq4iory6dmdff/Bedroom.jpg')
+  Bedroom = loadImage('https://dl.dropboxusercontent.com/s/pzkhv4785utrdrx/Screen%20Shot%202017-05-17%20at%208.36.48%20am.jpg?dl=0');
  
-  Keyboard = loadImage('https://dl.dropboxusercontent.com/s/xbiocg3rs3rlgw9/Keyboard.jpg')
+  Keyboard = loadImage('https://dl.dropboxusercontent.com/s/orqmdta5qihzil1/Screen%20Shot%202017-05-25%20at%207.55.49%20pm.jpg?dl=0');
   
-  FKey = loadImage('https://dl.dropboxusercontent.com/s/gsg9xtysfo3fu3b/Keyboard%20-%20F.jpg?dl=0')
+  FKey = loadImage('https://dl.dropboxusercontent.com/s/rawrlp27ak4dwjo/Screen%20Shot%202017-05-25%20at%207.35.55%20pm.jpg?dl=0');
   
-  AKey = loadImage('https://dl.dropboxusercontent.com/s/mba61y8066r4vln/Keyboard%20-%20A.jpg?dl=0')
+  AKey = loadImage('https://dl.dropboxusercontent.com/s/lssnjvhz7ur4tsx/Screen%20Shot%202017-05-25%20at%207.37.17%20pm.jpg?dl=0');
   
-  CKey = loadImage('https://dl.dropboxusercontent.com/s/6if6akfbcv9bnle/Keyboard%20-%20C.jpg?dl=0')
+  CKey = loadImage('https://dl.dropboxusercontent.com/s/1txlxzkam9dtdfn/Screen%20Shot%202017-05-25%20at%207.36.10%20pm.jpg?dl=0');
   
-  EKey = loadImage('https://dl.dropboxusercontent.com/s/jo9smv65bsnt7kq/Keyboard%20-%20E.jpg?dl=0')
+  EKey = loadImage('https://dl.dropboxusercontent.com/s/9ig0ee3kamqe9gq/Screen%20Shot%202017-05-25%20at%207.36.59%20pm.jpg?dl=0');
   
-  Living_Room = loadImage('https://dl.dropboxusercontent.com/s/ohcn4bp5j5kir5r/Living%20Room.psd')
+  Living_Room = loadImage('https://dl.dropboxusercontent.com/s/7fqrwv65kz9gm80/Suitcase%20puzzle.jpg?dl=0');
+  
+  Teddy_Bear = loadImage('https://dl.dropboxusercontent.com/s/zicsu0d6woireca/Ripped%20Teddy%20Bear%20Puzzle.jpg?dl=0')
 
-  Kitchen_L = loadImage('https://dl.dropboxusercontent.com/s/97se0ck3cq6dflh/Kitchen%20L.png?dl=0')
+  Suitcase = loadImage('https://dl.dropboxusercontent.com/s/ixqvefdw0so6hyo/Puzzle%20close%20up.jpg?dl=0')
   
-  Frame = loadImage('https://dl.dropboxusercontent.com/s/n0cxasvr9jv6669/Frame.png?dl=0')
+  Kitchen_L = loadImage('https://dl.dropboxusercontent.com/s/mhr3nm6mk6bhbs0/Screen%20Shot%202017-05-18%20at%2012.22.58%20PM.png?dl=0');
   
-  Upper_Left = loadImage('https://dl.dropboxusercontent.com/s/ic7svx8hqkcmsnd/Screen%20Shot%202017-03-01%20at%201.09.51%20PM.png')
+  Frame = loadImage('https://dl.dropboxusercontent.com/s/1y6p9qfqtb0s8wh/PNGPIX-COM-Photo-Frame-PNG-Transparent-Image-2-500x365.png?dl=0');
   
-  Upper_Middle = loadImage('https://dl.dropboxusercontent.com/s/97rhpktqdvc6tl6/Screen%20Shot%202017-03-03%20at%209.27.04%20AM.png')
+  //FINE
   
-  Upper_Right = loadImage('https://dl.dropboxusercontent.com/s/ru6z6fj0r3qq6of/Screen%20Shot%202017-03-03%20at%209.28.32%20AM.png')
+  Upper_Left = loadImage('https://dl.dropboxusercontent.com/s/ic7svx8hqkcmsnd/Screen%20Shot%202017-03-01%20at%201.09.51%20PM.png');
   
-  Middle_Left = loadImage('https://dl.dropboxusercontent.com/s/hb8irlvv5cuouv6/Screen%20Shot%202017-03-01%20at%201.10.02%20PM.png')
+  Upper_Middle = loadImage('https://dl.dropboxusercontent.com/s/97rhpktqdvc6tl6/Screen%20Shot%202017-03-03%20at%209.27.04%20AM.png');
+  
+  Upper_Right = loadImage('https://dl.dropboxusercontent.com/s/ru6z6fj0r3qq6of/Screen%20Shot%202017-03-03%20at%209.28.32%20AM.png');
+  
+  Middle_Left = loadImage('https://dl.dropboxusercontent.com/s/hb8irlvv5cuouv6/Screen%20Shot%202017-03-01%20at%201.10.02%20PM.png');
 
-  Middle_Middle = loadImage('https://dl.dropboxusercontent.com/s/n54y3y2lsm69jlp/Screen%20Shot%202017-03-03%20at%209.27.42%20AM.png')
+  Middle_Middle = loadImage('https://dl.dropboxusercontent.com/s/n54y3y2lsm69jlp/Screen%20Shot%202017-03-03%20at%209.27.42%20AM.png');
 
-  Middle_Right = loadImage('https://dl.dropboxusercontent.com/s/tdgnmc79vtwcjab/Screen%20Shot%202017-03-03%20at%209.28.50%20AM.png')
+  Middle_Right = loadImage('https://dl.dropboxusercontent.com/s/tdgnmc79vtwcjab/Screen%20Shot%202017-03-03%20at%209.28.50%20AM.png');
   
-  Bottom_Left = loadImage('https://dl.dropboxusercontent.com/s/q92j7dzh13zyaak/Screen%20Shot%202017-03-03%20at%209.22.03%20AM.png')
+  Bottom_Left = loadImage('https://dl.dropboxusercontent.com/s/q92j7dzh13zyaak/Screen%20Shot%202017-03-03%20at%209.22.03%20AM.png');
 
-  Bottom_Middle = loadImage('https://dl.dropboxusercontent.com/s/pj02fzbk23msx6s/Screen%20Shot%202017-03-03%20at%209.28.08%20AM.png')
+  Bottom_Middle = loadImage('https://dl.dropboxusercontent.com/s/pj02fzbk23msx6s/Screen%20Shot%202017-03-03%20at%209.28.08%20AM.png');
 
-  Bottom_Right = loadImage('https://dl.dropboxusercontent.com/s/te0qvk73v8wt7ux/Screen%20Shot%202017-03-03%20at%209.30.17%20AM.png')
+  Bottom_Right = loadImage('https://dl.dropboxusercontent.com/s/te0qvk73v8wt7ux/Screen%20Shot%202017-03-03%20at%209.30.17%20AM.png');
   
-  Kitchen_R_O = loadImage('https://dl.dropboxusercontent.com/s/jnbnjshrlm15h70/Kitchen%20R%20Original.psd?dl=0')
+  //FINE
   
-  Bottles_O = loadImage('https://dl.dropboxusercontent.com/s/kmtwpqkhof1l2tj/Bottle%20Row%20Original.psd?dl=0')
+  Kitchen_R_O = loadImage('https://dl.dropboxusercontent.com/s/wjpldx9x6bin81y/kitchen%20%281%29%20ver%202%20%281%29.jpg?dl=0');
   
-  Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/n8jwhxxt3kamhy8/Bottle%20Row%20Dark.psd?dl=0')
+  Bottles_O = loadImage('https://dl.dropboxusercontent.com/s/rrmsslurf4l0cha/Close%20up%201.jpg?dl=0');
   
-  Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/bwu29l7jfuibicx/Light%20Switch.psd?dl=0')
+  Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/c7eycmxcegfz1bb/Close%20up%201%20%28glow%20in%20the%20dark%29%20%281%29.jpg?dl=0');
   
-  Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/w6kw0fygmf5onu7/Kitchen%20R%20Dark.psd?dl=0')
+  Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/4pnum22skm8dm25/Close%20up%202.jpg?dl=0');
   
-  Sink = loadImage('https://dl.dropboxusercontent.com/s/c7d2zpxx0w42sii/Broken%20Bottle.psd?dl=0')
+  Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/qz9amvdq5jehxj9/kitchen.jpg?dl=0');
+  
+  Sink = loadImage('https://dl.dropboxusercontent.com/s/i06voclfdzczc0v/Broken%20glass.jpg');
 
-  Key = loadImage('https://dl.dropboxusercontent.com/s/460h7ym7gjkeskm/Key.png?dl=0')
+  Key = loadImage('https://dl.dropboxusercontent.com/s/inz863ta9i1p5po/Key.png?dl=0');
   
-  Fridge_L = loadImage('https://dl.dropboxusercontent.com/s/hwto27j3w1bgb2j/Fridge%20Locked.png?dl=0')
-  
-  Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/nejn7lswwvc94xx/Fridge%20Open.png?dl=0')
-  
-  Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/opqvf8ly4cr6vi6/Kitchen%20R%20After.psd?dl=0')
+  Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/kl2l33qhn5fxqwp/kitchen%20%281%29%20ver%202.jpg?dl=0');
+
+  Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/piy467osinc6068/rt43h5321.png?dl=0');
+
+  Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/4vgj3zxb2644ixs/FGTR1845QF_g_oe_511x473.png?dl=0');
+
+  Small_Note = loadImage('https://dl.dropboxusercontent.com/s/cgqlldg4wqngvb5/post-it-note-clipart-clipart-kid-post-it-clip-art-298_288.png?dl=0');
+
+  Clue = loadImage('https://dl.dropboxusercontent.com/s/e5l3xrit4os6411/FACE%20clue.png?dl=0');
 }
 
 function setup()
 {
   createCanvas(800,600);
   
+  Number1 = createSlider(0,9,0);
+  Number1.position(600,400);
+
+  Number2 = createSlider(0,9,0);
+  Number2.position(600,450);
+
+  Number3 = createSlider(0,9,0);
+  Number3.position(600,500);
+
+  Right = false;
+  Left = false;
+  
   canvas = 1;
   
   SCanvas1 = 0;
-  
   WORD = "";
   LOCKW = false;
   LOCKPIANO = 0;
   
-  SCanvas2 = 0;
+  Panel = 0;
+  FaceScore = 0;
   
-  Right = false;
-  Left = false;
+  SCanvas2 = 0;
   
   SCanvas3 = 0;
   
@@ -115,6 +138,22 @@ function setup()
   LightLock = false;
   Room = 0;
   KeyScore = 0;
+  
+  FridgeScore = 0;
+  
+  A = 1;
+  B = 1;
+  C = 1;
+
+  HALTA = false;
+  HALTB = false;
+
+  HALTC = false;
+  HALTD = false;
+
+  HALTE = false;
+  HALTF = false;
+  
 }
 
 function draw()
@@ -122,21 +161,33 @@ function draw()
   if (canvas == 1)
   {
     canvas1();
+    Number1.hide();
+    Number2.hide();
+    Number3.hide();
   }
   
   else if (canvas == 2)
   {
     canvas2();
+    Number1.show();
+    Number2.show();
+    Number3.show();
   }
   
   else if (canvas == 3)
   {
     canvas3();
+    Number1.hide();
+    Number2.hide();
+    Number3.hide();
   }
   
   else if (canvas == 4)
   {
     canvas4();
+    Number1.hide();
+    Number2.hide();
+    Number3.hide();
   }
   
   else
@@ -178,11 +229,41 @@ function canvas1()
         SCanvas1 = 1;
       }
     }
+    
+    if (Panel == 1)
+    {
+      if (FaceScore == 0)
+      {
+      fill(0,0,0);
+      rect(525,225,50,50);
+      image(Middle_Middle,530,230,40,40);
+      
+      if (mouseX > 530 && mouseX < 530+40 && mouseY > 230 && mouseY < 230+40)
+      {
+        cursor(HAND);
+        
+        if (mouseIsPressed == true)
+        {
+          rect(525,225,50,50);
+          FaceScore = 1;
+        }
+      }
+      }
+      
+      else if (FaceScore == 1)
+      {
+        fill(0,0,0);
+        rect(525,225,50,50);   
+        fill(255,255,255);
+      }
+    }
   }
   
   //Piano Puzzle
   if (SCanvas1 == 1)
   {
+    fill(255,255,255);
+    text(WORD,115,300);
     image(Keyboard,50,310,700,240);
     
     if (mouseX > 195 && mouseX < 195 + (140/3) && mouseY > 458 && mouseY < 458 + 80 || mouseX > 195 && mouseX < 228 && mouseY > 316 && mouseY < 316 + 145)
@@ -192,7 +273,7 @@ function canvas1()
       if (mouseIsPressed == true && LOCKW == false)
       {
         image(FKey,45,310,707,242);
-        WORD = WORD + "F"
+        WORD = WORD + "F";
         LOCKW = true;
       }
     }
@@ -204,7 +285,7 @@ function canvas1()
       if (mouseIsPressed == true && LOCKW == false)
       {
         image(AKey,50,316,698,230);
-        WORD = WORD + "A"
+        WORD = WORD + "A";
         LOCKW = true;
       }
     }
@@ -216,7 +297,7 @@ function canvas1()
       if (mouseIsPressed == true && LOCKW == false)
       {
         image(CKey,50,310,700,235);
-        WORD = WORD + "C"
+        WORD = WORD + "C";
         LOCKW = true;
       }
     }
@@ -228,12 +309,10 @@ function canvas1()
       if (mouseIsPressed == true && LOCKW == false)
       {
         image(EKey,50,312,700,238);
-        WORD = WORD + "E"
+        WORD = WORD + "E";
         LOCKW = true;
       }
     }
-    
-    text(WORD,115,300)
     
     fill(255,255,255);
     rect(50,275,50,25);
@@ -262,6 +341,7 @@ function canvas1()
         {
           SCanvas1 = 0;
           LOCKPIANO = 1;
+          Panel = 1;
         }
             
         else if (WORD != "FACE")
@@ -271,7 +351,7 @@ function canvas1()
       }
     }
     
-    image(Down_Arrow,365,553,90,45)
+    image(Down_Arrow,365,553,90,45);
     
     if (mouseX > 365 && mouseX < 365 + 90 && mouseY > 553 && mouseY < 553 + 45)
     {
@@ -328,14 +408,15 @@ function canvas2()
         SCanvas2 = 1;
       }
     }
-    
     Inventory();
   }
   
   if (SCanvas2 == 1)
   {
-  
-  image(Down_Arrow,365,553,90,45)
+    
+  Slider();  
+    
+  image(Down_Arrow,365,553,90,45);
 
     if (mouseX > 365 && mouseX < 365 + 90 && mouseY > 553 && mouseY < 553 + 45)
     {
@@ -371,7 +452,7 @@ function canvas3()
       }
     }
 
-    image(Left_Arrow,4,54,96,96)
+    image(Left_Arrow,4,54,96,96);
     
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
     {
@@ -395,7 +476,6 @@ function canvas3()
     }
     
     Inventory();
-
   }
   
   if (SCanvas3 == 1)
@@ -674,16 +754,17 @@ function canvas3()
 
     if (BBB < 119 && CCC > 199+133 && EEE > 199+2*133 && HHH > 119+118 && JJJ > 119+2*118 && KKK < 199+133 && MMM < 199+2*133 && PPP < 119+118)
     {
-      BOX = 1
+      BOX = 1;
     }
 
-    if (mouseX > 199+133 && mouseX < 199+2*133 && mouseY > 119+118 && mouseY < 119+2*118)
+    if (mouseX > 199+133 && mouseX < 199+2*133 && mouseY > 119+118 && mouseY < 119+2*118 && FaceScore == 1)
     {
-      if (mouseIsPressed)
-      {
-        BOX = 9
-      }
       cursor(HAND);
+      if (mouseIsPressed == true)
+      {
+        BOX = 9;
+        FaceScore = 2;
+      }
     }
 
     if (BOX == 9)
@@ -711,10 +792,12 @@ function canvas3()
 
       OOO = 199;
       PPP = 119+118;
+      
+     image(Middle_Middle,199+133,119+118,133,118);
     }
     
   //ROTATING FRAME END
-    
+  
   image(Down_Arrow,365,520,90,85);
 
     if (mouseX > 365 && mouseX < 365 + 90 && mouseY > 520 && mouseY < 520 + 85)
@@ -733,10 +816,11 @@ function canvas4()
 {
   background(Kitchen_R_O);
   fill(255,255,255);
-  cursor(ARROW)
+  cursor(ARROW);
   
   if (SCanvas4 == 0)
   {
+    Inventory();
     image(Left_Arrow,4,54,96,96);
 
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
@@ -751,7 +835,7 @@ function canvas4()
     }
     
     //Bottles Without Darkness
-    if (mouseX > 80 && mouseX < 160 && mouseY > 275 && mouseY < 275 + 50)
+    if (mouseX > 80 && mouseX < 160 && mouseY > 275 && mouseY < 275 + 50 && KeyScore == 0)
     {
       cursor(HAND);
       
@@ -762,11 +846,11 @@ function canvas4()
     }
     
     //Lights
-    if (mouseX > 622 && mouseX < 635 && mouseY > 250 && mouseY < 275)
+    if (mouseX > 622 && mouseX < 635 && mouseY > 250 && mouseY < 275 && KeyScore == 0)
     {
       cursor(HAND);
       
-      if (mouseIsPressed == true)
+      if (mouseIsPressed == true && KeyScore == 0)
       {
         SCanvas4 = 2;
       }
@@ -777,9 +861,14 @@ function canvas4()
     {
       cursor(HAND);
       
-      if (mouseIsPressed == true)
+      if (mouseIsPressed == true && FridgeScore == 0)
       {
         SCanvas4 = 6;
+      }
+      
+      if (mouseIsPressed == true && FridgeScore == 1)
+      {
+        SCanvas4 = 8;
       }
     }
   }
@@ -787,6 +876,8 @@ function canvas4()
   //Bottle With Lights
   if (SCanvas4 == 1)
   {
+    Inventory();
+    
     image(Bottles_O,0,0,800,600);
     
     image(Down_Arrow,60,375,120,100);
@@ -800,17 +891,18 @@ function canvas4()
         SCanvas4 = 0;
       }
     }
-    
   }
   
   //Lightswitch
   if (SCanvas4 == 2)
   {
+    Inventory();
+    
     image(Lightswitch,0,0,800,600);
     
     if (mouseX > 438 && mouseX < 523 && mouseY > 0 && mouseY < 140)
     {
-      cursor(HAND)
+      cursor(HAND);
       
       if (mouseIsPressed == true && LightLock == false && Room == 0)
       {
@@ -821,7 +913,7 @@ function canvas4()
       else if (mouseIsPressed == true && LightLock == false && Room == 1)
       {
         SCanvas4 = 0;
-        Room = Room - 1
+        Room = Room - 1;
       }
     }
     
@@ -842,10 +934,13 @@ function canvas4()
       }
     }
   }
-  
+
+  //Dark Kitchen
   if (SCanvas4 == 3)
   { 
-    image(Kitchen_R_D,0,0,800,600)
+    Inventory();
+
+    image(Kitchen_R_D,0,0,800,600);
     
     //Bottles With Darkness
     if (mouseX > 80 && mouseX < 160 && mouseY > 275 && mouseY < 275 + 50)
@@ -872,16 +967,18 @@ function canvas4()
   
   if (SCanvas4 == 4)
   {  
+    Inventory();
+
     //Bottles in Darkness Close-Up
     image(Bottles_D,0,0,800,600);
     
-    if (mouseX > 665 & mouseX < 725 && mouseY > 125 && mouseY < 125+225)
+    if (mouseX > 665 && mouseX < 725 && mouseY > 125 && mouseY < 125+225)
     {
       cursor(HAND);
       
       if (mouseIsPressed == true)
       {
-        SCanvas4 = 5
+        SCanvas4 = 5;
       }
     }
     
@@ -899,8 +996,11 @@ function canvas4()
     }
   }
   
+  //Sink
   if (SCanvas4 == 5)
   {
+    Inventory();
+
     image(Sink,0,0,800,600);
     
     if (mouseX > 545 && mouseX < 545+32 && mouseY > 348 && mouseY < 348+32)
@@ -915,12 +1015,46 @@ function canvas4()
     }
   }
   
+  //Closed Fridge
   if (SCanvas4 == 6)
   {
-  
-    image(Down_Arrow,365,520,90,85);
+    image(Fridge_C,0,0,800,600);
+    
+    Inventory();
+    
+    image(Down_Arrow,630,500,90,85);
 
-    if (mouseX > 365 && mouseX < 365 + 90 && mouseY > 520 && mouseY < 520 + 85)
+    if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
+    {
+      cursor(HAND);
+
+      if (mouseIsPressed == true)
+      {
+        SCanvas4 = 0;
+      }
+    }
+    
+    if (mouseX > 380 && mouseX < 387+30 && mouseY > 255 && mouseY < 280 && KeyScore == 1)
+    {
+      cursor(HAND);
+      
+      if (mouseIsPressed == true)
+      {
+        SCanvas4 = 7;
+      }
+    }
+  }
+  
+  //Fridge Puzzle
+  if (SCanvas4 == 7)
+  {
+    image(Fridge_C,0,0,800,600);
+    Inventory();
+    Combination();
+    
+    image(Down_Arrow,630,500,90,85);
+
+    if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
     {
       cursor(HAND);
 
@@ -931,8 +1065,284 @@ function canvas4()
     }
   }
   
-  Inventory();
+  if (SCanvas4 == 8)
+  {
+    image(Fridge_O,0,0,800,600);
+    Inventory();
+    image(Small_Note,500,300,25,25);
+    
+    if (mouseX > 500 && mouseX < 500+25 && mouseY > 300 && mouseY < 300+25)
+    {
+      if (mouseIsPressed == true)
+      {
+        SCanvas4 = 9;
+      }
+    }
+    
+    image(Down_Arrow,630,500,90,85);
 
+    if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
+    {
+      cursor(HAND);
+
+      if (mouseIsPressed == true)
+      {
+        SCanvas4 = 0;
+      }
+    }
+    
+  }
+  
+  if (SCanvas4 == 9)
+  {
+    image(Clue,0,0,800,600);
+    
+    image(Down_Arrow,630,500,90,85);
+
+    if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
+    {
+      cursor(HAND);
+
+      if (mouseIsPressed == true)
+      {
+        SCanvas4 = 0;
+      }
+    }
+  }
+}
+
+
+function Combination()
+{
+  //Input 1
+  //Toggle Up 1
+
+  fill(150,150,150);
+  rect(75,50,25,25);
+
+  if (mouseX > 75 && mouseX < 75+25 && mouseY > 50 && mouseY < 50+25)
+  {
+    fill(200,200,200);
+    rect(75,50,25,25);
+
+    if (mouseIsPressed == true && HALTA == false)
+    {
+      fill(250,250,250);
+      rect(75,50,25,25);
+      HALTA = true;
+
+      A = A + 1;
+    }
+  }
+
+  //Number 1
+
+  fill(255,0,0);
+  rect(62.5,100,50,50);
+
+  fill(0,0,0);
+  text(+A,75+10,130);
+
+  //Toggle Down 1
+
+  fill(150,150,150);
+  rect(75,175,25,25);
+
+  if (mouseX > 75 && mouseX < 75+25 && mouseY > 175 && mouseY < 175+25)
+  {
+    fill(200,200,200);
+    rect(75,175,25,25);
+
+    if (mouseIsPressed == true && HALTB == false)
+    {
+      fill(250,250,250);
+      rect(75,175,25,25);
+      HALTB = true;
+
+      A = A - 1;
+    }
+  }
+
+  if (A > 9)
+  {
+    A = 0;
+  }
+
+  if (A < 0)
+  {
+    A = 9;
+  }
+
+  //Input 2
+  //Toggle Up 2
+
+  fill(150,150,150);
+  rect(75+100,50,25,25);
+
+  if (mouseX > 75+100 && mouseX < 75+125 && mouseY > 50 && mouseY < 50+25)
+  {
+    fill(200,200,200);
+    rect(75+100,50,25,25);
+
+    if (mouseIsPressed == true && HALTC == false)
+    {
+      fill(250,250,250);
+      rect(75+100,50,25,25);
+      HALTC = true;
+
+      B = B + 1;
+    }
+  }
+
+  //Number 2
+
+  fill(0,255,0);
+  rect(62.5+100,100,50,50);
+
+  fill(0,0,0);
+  text(+B,75+10+100,130);
+
+  //Toggle Down 2
+
+  fill(150,150,150);
+  rect(75+100,175,25,25);
+
+  if (mouseX > 75+100 && mouseX < 75+125 && mouseY > 175 && mouseY < 175+25)
+  {
+    fill(200,200,200);
+    rect(75+100,175,25,25);
+
+    if (mouseIsPressed == true && HALTD == false)
+    {
+      fill(250,250,250);
+      rect(75+100,175,25,25);
+      HALTD = true;
+
+      B = B - 1;
+    }
+  }
+
+  if (B > 9)
+  {
+    B = 0;
+  }
+
+  if (B < 0)
+  {
+    B = 9;
+  }
+
+  //Input 3
+  //Toggle Up 3
+
+  fill(150,150,150);
+  rect(75+200,50,25,25);
+
+  if (mouseX > 75+200 && mouseX < 75+225 && mouseY > 50 && mouseY < 50+25)
+  {
+    fill(200,200,200);
+    rect(75+200,50,25,25);
+
+    if (mouseIsPressed == true && HALTE == false)
+    {
+      fill(250,250,250);
+      rect(75+200,50,25,25);
+      HALTE = true;
+
+      C = C + 1;
+    }
+  }
+
+  //Number 3
+
+  fill(0,0,255);
+  rect(62.5+200,100,50,50);
+
+  fill(0,0,0);
+  text(+C,75+10+200,130);
+
+  //Toggle Down 3
+
+  fill(150,150,150);
+  rect(75+200,175,25,25);
+
+  if (mouseX > 75+200 && mouseX < 75+225 && mouseY > 175 && mouseY < 175+25)
+  {
+    fill(200,200,200);
+    rect(75+200,175,25,25);
+
+    if (mouseIsPressed == true && HALTF == false)
+    {
+      fill(250,250,250);
+      rect(75+200,175,25,25);
+      HALTF = true;
+
+      C = C - 1;
+    }
+  }
+
+  if (C > 9)
+  {
+    C = 0;
+  }
+
+  if (C < 0)
+  {
+    C = 9;
+  }
+
+  if (A == 5 && B == 8 && C == 6)
+  {
+    fill(0,0,0);
+    KeyScore = 2;
+    SCanvas4 = 8;
+    FridgeScore = 1;
+  }
+}
+
+function Slider()
+{
+  //SLIDER PUZZLE
+
+  fill(0,0,0);
+
+  text(+Number1.value(),100,300);
+
+  text(+Number2.value(),100,360);
+
+  text(+Number3.value(),100,410);
+
+  fill(255,255,255);
+  rect(250,362.5,100,25);
+  fill(0,0,0);
+  text("Enter",285,380);
+
+  if (mouseX > 250 && mouseX < 250+100 && mouseY > 362.5 && mouseY < 362.5+25)
+  {
+    fill(0,0,255);
+    rect(250,362.5,100,25);
+    fill(0,0,0);
+    text("Enter",285,380);
+
+    if (mouseIsPressed == true)
+    {
+      fill(255,0,0);
+      rect(250,362.5,100,25);
+      fill(0,0,0);
+      text("Enter",285,380);
+
+      if (Number1.value() == 3 && Number2.value() == 1 && Number3.value() == 4)
+      {
+        fill(0,255,0);
+        rect(250,362.5,100,25);
+        fill(0,0,0);
+        text("Enter",285,380);
+      }
+    }
+  }
+
+  fill(0,0,0);
+  text("3 - 1 - 4", 275,350);
 }
 
 function mouseReleased()
@@ -956,6 +1366,36 @@ function mouseReleased()
   {
     LightLock = false;
   }
+  
+  if (HALTA)
+  {
+    HALTA = false; 
+  }
+
+  if (HALTB)
+  {
+    HALTB = false; 
+  }
+
+  if (HALTC)
+  {
+    HALTC = false; 
+  }
+
+  if (HALTD)
+  {
+    HALTD = false; 
+  }
+
+  if (HALTE)
+  {
+    HALTE = false; 
+  }
+
+  if (HALTF)
+  {
+    HALTF = false; 
+  }
 }
 
 function Inventory()
@@ -967,6 +1407,11 @@ function Inventory()
   strokeWeight(5);
   fill(255,255,130);
   rect(10,507,80,80);
+  
+  if (FaceScore == 1)
+  {
+    image(Middle_Middle,15,512,70,70)
+  }
 
   rect(10+90,507,80,80);
 
@@ -974,7 +1419,7 @@ function Inventory()
   
   if (KeyScore == 1)
   {
-    image(Key,200,520,60,60)
+    image(Key,200,520,60,60);
   }
 
   rect(10+270,507,80,80);
