@@ -154,6 +154,7 @@ function setup()
   HALTE = false;
   HALTF = false;
   
+  ARROWLOCK = false;
 }
 
 function draw()
@@ -234,11 +235,13 @@ function canvas1()
     {
       if (FaceScore == 0)
       {
+      fill(121,83,23);
+      rect(525,225,60,60)
       fill(0,0,0);
-      rect(525,225,50,50);
-      image(Middle_Middle,530,230,40,40);
+      rect(530,230,50,50);
+      image(Middle_Middle,535,235,40,40);
       
-      if (mouseX > 530 && mouseX < 530+40 && mouseY > 230 && mouseY < 230+40)
+      if (mouseX > 535 && mouseX < 535+40 && mouseY > 235 && mouseY < 235+40)
       {
         cursor(HAND);
         
@@ -1074,25 +1077,27 @@ function canvas4()
   {
     image(Fridge_O,0,0,800,600);
     Inventory();
-    image(Small_Note,500,300,25,25);
+    image(Small_Note,525,260,25,25);
     
-    if (mouseX > 500 && mouseX < 500+25 && mouseY > 300 && mouseY < 300+25)
+    if (mouseX > 525 && mouseX < 525+25 && mouseY > 260 && mouseY < 260+25)
     {
+      cursor(HAND);
       if (mouseIsPressed == true)
       {
         SCanvas4 = 9;
       }
     }
-    
+        
     image(Down_Arrow,630,500,90,85);
 
     if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
     {
       cursor(HAND);
 
-      if (mouseIsPressed == true)
+      if (mouseIsPressed == true && ARROWLOCK == false)
       {
         SCanvas4 = 0;
+        ARROWLOCK = true;
       }
     }
     
@@ -1108,9 +1113,10 @@ function canvas4()
     {
       cursor(HAND);
 
-      if (mouseIsPressed == true)
+      if (mouseIsPressed == true && ARROWLOCK == false)
       {
-        SCanvas4 = 0;
+        SCanvas4 = 8;
+        ARROWLOCK = true;
       }
     }
   }
@@ -1123,17 +1129,17 @@ function Combination()
   //Toggle Up 1
 
   fill(150,150,150);
-  rect(75,50,25,25);
+  rect(300,349,20,20);
 
-  if (mouseX > 75 && mouseX < 75+25 && mouseY > 50 && mouseY < 50+25)
+  if (mouseX > 300 && mouseX < 300+20 && mouseY > 349 && mouseY < 349+20)
   {
     fill(200,200,200);
-    rect(75,50,25,25);
+    rect(300,349,20,20);
 
     if (mouseIsPressed == true && HALTA == false)
     {
       fill(250,250,250);
-      rect(75,50,25,25);
+      rect(300,349,20,20);
       HALTA = true;
 
       A = A + 1;
@@ -1143,25 +1149,25 @@ function Combination()
   //Number 1
 
   fill(255,0,0);
-  rect(62.5,100,50,50);
+  rect(280,384,60,60);
 
   fill(0,0,0);
-  text(+A,75+10,130);
+  text(+A,308,418);
 
   //Toggle Down 1
 
   fill(150,150,150);
-  rect(75,175,25,25);
+  rect(300,459,20,20);
 
-  if (mouseX > 75 && mouseX < 75+25 && mouseY > 175 && mouseY < 175+25)
+  if (mouseX > 300 && mouseX < 300+20 && mouseY > 459 && mouseY < 459+20)
   {
     fill(200,200,200);
-    rect(75,175,25,25);
+    rect(300,459,20,20);
 
     if (mouseIsPressed == true && HALTB == false)
     {
       fill(250,250,250);
-      rect(75,175,25,25);
+      rect(300,459,20,20);
       HALTB = true;
 
       A = A - 1;
@@ -1205,7 +1211,7 @@ function Combination()
   rect(370,384,60,60);
 
   fill(0,0,0);
-  text(+B,398,420);
+  text(+B,398,418);
 
   //Toggle Down 2
 
@@ -1241,17 +1247,17 @@ function Combination()
   //Toggle Up 3
 
   fill(150,150,150);
-  rect(75+200,50,25,25);
+  rect(480,349,20,20);
 
-  if (mouseX > 75+200 && mouseX < 75+225 && mouseY > 50 && mouseY < 50+25)
+  if (mouseX > 480 && mouseX < 480+20 && mouseY > 349 && mouseY < 349+20)
   {
     fill(200,200,200);
-    rect(75+200,50,25,25);
+    rect(480,349,20,20);
 
     if (mouseIsPressed == true && HALTE == false)
     {
       fill(250,250,250);
-      rect(75+200,50,25,25);
+      rect(480,349,20,20);
       HALTE = true;
 
       C = C + 1;
@@ -1261,25 +1267,25 @@ function Combination()
   //Number 3
 
   fill(0,0,255);
-  rect(62.5+200,100,50,50);
+  rect(460,384,60,60);
 
   fill(0,0,0);
-  text(+C,75+10+200,130);
+  text(+C,488,418);
 
   //Toggle Down 3
 
   fill(150,150,150);
-  rect(75+200,175,25,25);
+  rect(480,459,20,20);
 
-  if (mouseX > 75+200 && mouseX < 75+225 && mouseY > 175 && mouseY < 175+25)
+  if (mouseX > 480 && mouseX < 480+20 && mouseY > 459 && mouseY < 459+20)
   {
     fill(200,200,200);
-    rect(75+200,175,25,25);
+    rect(480,459,20,20);
 
     if (mouseIsPressed == true && HALTF == false)
     {
       fill(250,250,250);
-      rect(75+200,175,25,25);
+      rect(480,459,20,20);
       HALTF = true;
 
       C = C - 1;
@@ -1302,6 +1308,7 @@ function Combination()
     KeyScore = 2;
     SCanvas4 = 8;
     FridgeScore = 1;
+    ARROWLOCK = false;
   }
 }
 
@@ -1402,6 +1409,11 @@ function mouseReleased()
   if (HALTF)
   {
     HALTF = false; 
+  }
+  
+  if (ARROWLOCK)
+  {
+    ARROWLOCK = false;
   }
 }
 
