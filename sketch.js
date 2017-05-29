@@ -1205,7 +1205,7 @@ function Combination()
   rect(370,384,60,60);
 
   fill(0,0,0);
-  text(+B,398,350);
+  text(+B,398,410);
 
   //Toggle Down 2
 
