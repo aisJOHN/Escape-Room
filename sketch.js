@@ -255,9 +255,10 @@ function canvas1()
       
       else if (FaceScore == 1)
       {
+        fill(121,83,23);
+        rect(525,225,60,60)
         fill(0,0,0);
-        rect(525,225,50,50);   
-        fill(255,255,255);
+        rect(530,230,50,50);
       }
     }
   }
