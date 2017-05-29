@@ -1,6 +1,6 @@
 function preload()
 {
-  Introduction = loadImage('https://dl.dropboxusercontent.com/s/bzchwb2ttquoyux/Introduction.jpg?dl=0');
+  Introduction = loadImage('https://dl.dropboxusercontent.com/s/gwpup3sjyr7b0zh/Introduction.jpg?dl=0');
   
   Left_Arrow = loadImage('https://dl.dropboxusercontent.com/s/h3eipyrq514spu5/Left.png?dl=0');
 
@@ -20,61 +20,61 @@ function preload()
   
   EKey = loadImage('https://dl.dropboxusercontent.com/s/l8o0aiu3wvopt8t/E%20Key.jpg?dl=0');
   
-  Living_Room = loadImage('https://dl.dropboxusercontent.com/s/ohcn4bp5j5kir5r/Living%20Room.jpg?dl=0');
+  Living_Room = loadImage('https://dl.dropboxusercontent.com/s/mnz32q4vqythzoj/Living%20Room.png?dl=0');
   
-  Teddy_Bear = loadImage('https://dl.dropboxusercontent.com/s/vmkkrekejmof375/Teddy%20Bear%20Ripped.jpg?dl=0')
+  Teddy_Bear = loadImage('https://dl.dropboxusercontent.com/s/rl0knqbwk5af2ol/Teddy%20Bear%20Ripped.jpg?dl=0')
 
-  Suitcase = loadImage('https://dl.dropboxusercontent.com/s/w1t0l1nf5xzcmy8/Open%20Suitcase.jpg?dl=0')
+  Suitcase = loadImage('https://dl.dropboxusercontent.com/s/imkszrkvpfa6c17/Open%20Suitcase.jpg?dl=0')
   
-  Kitchen_L = loadImage('https://dl.dropboxusercontent.com/s/0prv5g6dhsgl6kh/Kitchen%20Left.png?dl=0');
+  Kitchen_L = loadImage('https://dl.dropboxusercontent.com/s/19zdoukrugloshc/Kitchen%20Left.jpg?dl=0');
   
-  Frame = loadImage('https://dl.dropboxusercontent.com/s/9slp8ybbvq9got4/Frame.png?dl=0');
+  Frame = loadImage('https://dl.dropboxusercontent.com/s/l1jkvwthk61r661/Frame.png?dl=0');
   
   //FINE
   
-  Upper_Left = loadImage('https://dl.dropboxusercontent.com/s/ic7svx8hqkcmsnd/Screen%20Shot%202017-03-01%20at%201.09.51%20PM.png');
+  Upper_Left = loadImage('https://dl.dropboxusercontent.com/s/vibvf92h0ih8irs/Upper%20Left.png?dl=0');
   
-  Upper_Middle = loadImage('https://dl.dropboxusercontent.com/s/97rhpktqdvc6tl6/Screen%20Shot%202017-03-03%20at%209.27.04%20AM.png');
+  Upper_Middle = loadImage('https://dl.dropboxusercontent.com/s/65il9688v1s4o1w/Upper%20Middle.png?dl=0');
   
-  Upper_Right = loadImage('https://dl.dropboxusercontent.com/s/ru6z6fj0r3qq6of/Screen%20Shot%202017-03-03%20at%209.28.32%20AM.png');
+  Upper_Right = loadImage('https://dl.dropboxusercontent.com/s/w4nc9cxv134ie4z/Upper%20Right.png?dl=0');
   
-  Middle_Left = loadImage('https://dl.dropboxusercontent.com/s/hb8irlvv5cuouv6/Screen%20Shot%202017-03-01%20at%201.10.02%20PM.png');
+  Middle_Left = loadImage('https://dl.dropboxusercontent.com/s/wx9ll7wip4wkxsk/Middle%20Left.png?dl=0');
 
-  Middle_Middle = loadImage('https://dl.dropboxusercontent.com/s/n54y3y2lsm69jlp/Screen%20Shot%202017-03-03%20at%209.27.42%20AM.png');
+  Middle_Middle = loadImage('https://dl.dropboxusercontent.com/s/xrj03z9eeeqv50h/Middle%20Middle.png?dl=0');
 
-  Middle_Right = loadImage('https://dl.dropboxusercontent.com/s/tdgnmc79vtwcjab/Screen%20Shot%202017-03-03%20at%209.28.50%20AM.png');
+  Middle_Right = loadImage('https://dl.dropboxusercontent.com/s/2f5jce5bckw3sc3/Middle%20Right.png?dl=0');
   
-  Bottom_Left = loadImage('https://dl.dropboxusercontent.com/s/q92j7dzh13zyaak/Screen%20Shot%202017-03-03%20at%209.22.03%20AM.png');
+  Bottom_Left = loadImage('https://dl.dropboxusercontent.com/s/1o8wyzehsu92lt6/Bottom%20Left.png?dl=0');
 
-  Bottom_Middle = loadImage('https://dl.dropboxusercontent.com/s/pj02fzbk23msx6s/Screen%20Shot%202017-03-03%20at%209.28.08%20AM.png');
+  Bottom_Middle = loadImage('https://dl.dropboxusercontent.com/s/lwxt9ujpsr0u77l/Bottom%20Middle.png?dl=0');
 
-  Bottom_Right = loadImage('https://dl.dropboxusercontent.com/s/te0qvk73v8wt7ux/Screen%20Shot%202017-03-03%20at%209.30.17%20AM.png');
+  Bottom_Right = loadImage('https://dl.dropboxusercontent.com/s/r7ppvs15b6neey1/Bottom%20Right.png?dl=0');
   
   //FINE
   
-  Kitchen_R_O = loadImage('https://dl.dropboxusercontent.com/s/7ew9aiqz7y18su2/Kitchen%20Right%20Original.jpg?dl=0');
+  Kitchen_R_O = loadImage('https://dl.dropboxusercontent.com/s/gdme9jrledfbx2n/Kitchen%20Right%20Original.jpg?dl=0');
   
-  Bottles_O = loadImage('https://dl.dropboxusercontent.com/s/tx5amuxv7uqdacm/Bottle%20Row%20Light.jpg?dl=0');
+  Bottles_O = loadImage('https://dl.dropboxusercontent.com/s/o8ooxco9pf9jlvn/Bottle%20Row%20Light.jpg?dl=0');
   
-  Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/7iom0zwreqfk7nk/Bottle%20Row%20Dark.jpg?dl=0');
+  Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/zpld1phoq1msspe/Bottle%20Row%20Dark.jpg?dl=0');
   
-  Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/pttitjkz0g3i3g0/Light%20Switch.jpg?dl=0');
+  Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/a1v25zw8zbkd3dn/Light%20Switch.jpg?dl=0');
   
-  Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/bjowsiekewkca3f/Kitchen%20Right%20Dark.jpg?dl=0');
+  Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/ypbp2h1lvzt7umh/Kitchen%20Right%20Dark.jpg?dl=0');
   
-  Sink = loadImage('https://dl.dropboxusercontent.com/s/jc80fdh0twftygw/Sink.jpg?dl=0');
+  Sink = loadImage('https://dl.dropboxusercontent.com/s/h1fwhyumi2by2u2/Sink.jpg?dl=0');
 
-  Key = loadImage('https://dl.dropboxusercontent.com/s/pss1qqeq8ajxhvf/Key.png?dl=0');
+  Key = loadImage('https://dl.dropboxusercontent.com/s/1yds5t7ay8uu2s3/Key.png?dl=0');
   
-  Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/kw1j0quu24wcssg/Kitchen%20Right%20Solved.jpg?dl=0');
+  Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/1lvjummsa0p0s4f/Kitchen%20Right%20Solved.jpg?dl=0');
 
-  Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/e837kjy07cfkxp6/Fridge%20Locked.jpg?dl=0');
+  Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/srg3x1pmy8dsd1y/Fridge%20Closed.png?dl=0');
 
-  Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/vcupoah50vdmfi8/Fridge%20Open.jpg?dl=0');
+  Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/vxtevd9do596m2e/Fridge%20Open.png?dl=0');
 
-  Small_Note = loadImage('https://dl.dropboxusercontent.com/s/e83ia9zur2s7gj8/Note.png?dl=0');
+  Small_Note = loadImage('https://dl.dropboxusercontent.com/s/d27j93z57dls3e6/Note.png?dl=0');
 
-  Clue = loadImage('https://dl.dropboxusercontent.com/s/higvswdonkjetsc/Clue.png?dl=0');
+  Clue = loadImage('https://dl.dropboxusercontent.com/s/d74kymk2l1j1wua/FACE%20clue.png?dl=0');
 }
 
 function setup()
@@ -427,6 +427,11 @@ function canvas2()
         SCanvas2 = 0;
       }
     }
+  }
+  
+  if (SCanvas2 == 2)
+  {
+    image(Suitcase,0,0,800,600);
   }
 }
 
@@ -1177,17 +1182,17 @@ function Combination()
   //Toggle Up 2
 
   fill(150,150,150);
-  rect(75+100,50,25,25);
+  rect(390,349,20,20);
 
-  if (mouseX > 75+100 && mouseX < 75+125 && mouseY > 50 && mouseY < 50+25)
+  if (mouseX > 390 && mouseX < 390+20 && mouseY > 349 && mouseY < 349+20)
   {
     fill(200,200,200);
-    rect(75+100,50,25,25);
+    rect(390,349,20,20);
 
     if (mouseIsPressed == true && HALTC == false)
     {
       fill(250,250,250);
-      rect(75+100,50,25,25);
+      rect(390,349,20,20);
       HALTC = true;
 
       B = B + 1;
@@ -1197,25 +1202,25 @@ function Combination()
   //Number 2
 
   fill(0,255,0);
-  rect(62.5+100,100,50,50);
+  rect(370,384,60,60);
 
   fill(0,0,0);
-  text(+B,75+10+100,130);
+  text(+B,398,350);
 
   //Toggle Down 2
 
   fill(150,150,150);
-  rect(75+100,175,25,25);
+  rect(390,459,20,20);
 
-  if (mouseX > 75+100 && mouseX < 75+125 && mouseY > 175 && mouseY < 175+25)
+  if (mouseX > 390 && mouseX < 390+20 && mouseY > 459 && mouseY < 459+20)
   {
     fill(200,200,200);
-    rect(75+100,175,25,25);
+    rect(390,459,20,20);
 
     if (mouseIsPressed == true && HALTD == false)
     {
       fill(250,250,250);
-      rect(75+100,175,25,25);
+      rect(390,459,20,20);
       HALTD = true;
 
       B = B - 1;
@@ -1337,6 +1342,8 @@ function Slider()
         rect(250,362.5,100,25);
         fill(0,0,0);
         text("Enter",285,380);
+        
+        SCanvas2 = 2;
       }
     }
   }
