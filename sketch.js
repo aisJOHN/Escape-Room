@@ -5,7 +5,7 @@ function preload()
   
   //Navigation Images
   Left_Arrow = loadImage('https://dl.dropboxusercontent.com/s/h3eipyrq514spu5/Left.png?dl=0');
- 
+
   Right_Arrow = loadImage('https://dl.dropboxusercontent.com/s/9koybuosm6censl/Right.png?dl=0');
   
   Down_Arrow = loadImage('https://dl.dropboxusercontent.com/s/std1feag2jxg72f/Down.png?dl=0');
@@ -18,9 +18,9 @@ function preload()
   Number_4 = loadImage('https://dl.dropboxusercontent.com/s/1qs83j10p08wdxl/Number%204.png?dl=0');
   
   Number_5 = loadImage('https://dl.dropboxusercontent.com/s/pwfibh4yh43ta66/Number%205.png?dl=0');
- 
+
   Number_6 = loadImage('https://dl.dropboxusercontent.com/s/lpu8zo3to0ty238/Number%206.png?dl=0');
- 
+
   Number_8 = loadImage('https://dl.dropboxusercontent.com/s/mlu1aa0472amkc7/Number%208.png?dl=0');
   
   //Bedroom Images
@@ -42,7 +42,7 @@ function preload()
   
     //Final Puzzle Teddy Bear
   Teddy_Bear = loadImage('https://dl.dropboxusercontent.com/s/rl0knqbwk5af2ol/Teddy%20Bear%20Ripped.jpg?dl=0')
- 
+
     //Suitcase Puzzle
   Suitcase = loadImage('https://dl.dropboxusercontent.com/s/imkszrkvpfa6c17/Open%20Suitcase.jpg?dl=0')
   
@@ -64,16 +64,16 @@ function preload()
   Upper_Right = loadImage('https://dl.dropboxusercontent.com/s/w4nc9cxv134ie4z/Upper%20Right.png?dl=0');
   
   Middle_Left = loadImage('https://dl.dropboxusercontent.com/s/wx9ll7wip4wkxsk/Middle%20Left.png?dl=0');
- 
+
     //Answer to Painting Puzzle. To be in Inventory
   Middle_Middle = loadImage('https://dl.dropboxusercontent.com/s/xrj03z9eeeqv50h/Middle%20Middle.png?dl=0');
- 
+
   Middle_Right = loadImage('https://dl.dropboxusercontent.com/s/2f5jce5bckw3sc3/Middle%20Right.png?dl=0');
   
   Bottom_Left = loadImage('https://dl.dropboxusercontent.com/s/1o8wyzehsu92lt6/Bottom%20Left.png?dl=0');
- 
+
   Bottom_Middle = loadImage('https://dl.dropboxusercontent.com/s/lwxt9ujpsr0u77l/Bottom%20Middle.png?dl=0');
- 
+
   Bottom_Right = loadImage('https://dl.dropboxusercontent.com/s/r7ppvs15b6neey1/Bottom%20Right.png?dl=0');
   
   //Right Kitchen Images
@@ -94,28 +94,28 @@ function preload()
   
     //Sink
   Sink = loadImage('https://dl.dropboxusercontent.com/s/h1fwhyumi2by2u2/Sink.jpg?dl=0');
- 
+
     //Key for the Inventory
   Key = loadImage('https://dl.dropboxusercontent.com/s/1yds5t7ay8uu2s3/Key.png?dl=0');
   
     //After all puzzles in the kitchen are solved.
   Kitchen_R_S = loadImage('https://dl.dropboxusercontent.com/s/1lvjummsa0p0s4f/Kitchen%20Right%20Solved.jpg?dl=0');
- 
+
     //Closed Fridge
   Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/srg3x1pmy8dsd1y/Fridge%20Closed.png?dl=0');
- 
+
     //Open Fridge
   Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/vxtevd9do596m2e/Fridge%20Open.png?dl=0');
- 
+
     //Far-away image of the Piano clue.
   Small_Note = loadImage('https://dl.dropboxusercontent.com/s/d27j93z57dls3e6/Note.png?dl=0');
- 
+
     //Piano clue
   Clue = loadImage('https://dl.dropboxusercontent.com/s/d74kymk2l1j1wua/FACE%20clue.png?dl=0');
   
   //Victory Screen images
   Victory_1 = loadImage('https://dl.dropboxusercontent.com/s/vxbwou8olg8p082/Victory%201.png?dl=0');
- 
+
   Victory_2 = loadImage('https://dl.dropboxusercontent.com/s/y9kx3jkyej1stug/Victory%202.png?dl=0');
   
   SoundS = loadSound('https://dl.dropboxusercontent.com/s/bfkboiyjzuex7q5/Switch.m4a?dl=0');
@@ -137,7 +137,7 @@ function preload()
   Final_Background_Music = loadSound('https://dl.dropboxusercontent.com/s/ljuxsooq1xzlc5x/Escape%20room%20sound%201.mp3?dl=0')
   
 }
- 
+
 function setup()
 {
   VolumeControl = createSlider(0,100,100);
@@ -148,7 +148,7 @@ function setup()
   mute = 1.0
   
   createCanvas(800,600);
- 
+
   Right = false;
   Left = false;
   
@@ -174,10 +174,10 @@ function setup()
   //Suitcase Puzzle variables
   Number1 = createSlider(0,9,0);
   Number1.position(650,150);
- 
+
   Number2 = createSlider(0,9,0);
   Number2.position(650,200);
- 
+
   Number3 = createSlider(0,9,0);
   Number3.position(650,250);
   
@@ -186,41 +186,41 @@ function setup()
   GlassLock = false;
   
   //Final Puzzle variables
- 
+
   selectionBox = createSelect();
   selectionBox.option("α");
   selectionBox.option("ε");
   selectionBox.position(515-380,490);
   selectionBox.size(50,10);
- 
+
   selectionBox2 = createSelect();
   selectionBox2.option("Φ");
   selectionBox2.option("Ψ");
   selectionBox2.option("Ξ");
   selectionBox2.position(515-280,490);
   selectionBox2.size(50,10);
- 
+
   selectionBox3 = createSelect();
   selectionBox3.option("δ");
   selectionBox3.option("ω");
   selectionBox3.position(515-180,490);
   selectionBox3.size(50,10);
- 
+
   selectionBox4 = createSelect();
   selectionBox4.option("η");
   selectionBox4.option("ξ");
   selectionBox4.position(515-80,490);
   selectionBox4.size(50,10);
- 
+
   stateOfBox = 1;
- 
+
   L = 50;
   BOMB = 375;
   Growth = 0;
- 
+
   BOMB2 = 375
   L2 = 50;
- 
+
   BOMB3 = 375
   L3 = 50;
   
@@ -232,25 +232,25 @@ function setup()
   
   AAA = 199;
   BBB = 119;
- 
+
   CCC = 199+133;
   DDD = 119;
- 
+
   EEE = 199+2*133;
   FFF = 119;
- 
+
   GGG = 199+2*133;
   HHH = 119+118;
- 
+
   III = 199+2*133;
   JJJ = 119+2*118;
- 
+
   KKK = 199+133;
   LLL = 119+2*118;
- 
+
   MMM = 199;
   NNN = 119+2*118;
- 
+
   OOO = 199;
   PPP = 119+118;
   
@@ -267,13 +267,13 @@ function setup()
   A = 1;
   B = 1;
   C = 1;
- 
+
   HALTA = false;
   HALTB = false;
- 
+
   HALTC = false;
   HALTD = false;
- 
+
   HALTE = false;
   HALTF = false;
   
@@ -284,23 +284,24 @@ function setup()
   FINALFACE = 0;
   FINALFRIDGE = 0;
 }
- 
+
 function draw()
 {  
   //I must hide the sliders for the other canvases.
+  
   if (canvas == 0)
   {
-   canvas0();
+    canvas0();
     Number1.hide();
     Number2.hide();
     Number3.hide();
- 
+
     selectionBox.hide();
     selectionBox2.hide();
     selectionBox3.hide();
     selectionBox4.hide();
   }
-  
+      
   else if (canvas == 1)
   {     
     canvas1();
@@ -369,7 +370,7 @@ function draw()
     Number1.hide();
     Number2.hide();
     Number3.hide();
- 
+
     selectionBox.hide();
     selectionBox2.hide();
     selectionBox3.hide();
@@ -378,7 +379,7 @@ function draw()
   
   else
   {
-    canvas = 0;
+    canvas = 1;
   }
   
   fill(0,0,0);
@@ -389,27 +390,26 @@ function draw()
     Background_Music.play();
     Background_Music.loop();
   }
- 
+
   Background_Music.setVolume(((VolumeControl.value()) * 0.01));
 }
- 
+
 function canvas0()
 {
   image(Introduction,0,0,800,600);
   cursor(ARROW);
-  
+
   if (mouseX > 343 && mouseX < 469 && mouseY > 333 && mouseY < 350)
   {
     cursor(HAND);
-	
-if (mouseIsPressed == true)
+
+    if (mouseIsPressed == true)
     {
       canvas = 1;
     }
   }
 }
 
- 
 function canvas1()
 {
   cursor(ARROW);
@@ -422,11 +422,11 @@ function canvas1()
     
     // Navigate Right
     image(Right_Arrow,684,54,96,96);
- 
+
     if (mouseX > 684 && mouseX < 684+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Right == false)
       {
         canvas = canvas + 1;
@@ -562,7 +562,7 @@ function canvas1()
     if (mouseX > 55 + (280/3) && mouseX < 195 && mouseY > 455 && mouseY < 455 + 80 || mouseX > 55 + (280/3) + 15 && mouseX < 195 && mouseY > 316 && mouseY < 316 + 145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         image(EKey,50,312,700,238);
@@ -583,7 +583,7 @@ function canvas1()
     if (mouseX > 55+(140/3) && mouseX < 55+(280/3) && mouseY > 455 && mouseY < 455+80 || mouseX > 55+ (140/3)+15 && mouseX < 55+ (140/3)+30 && mouseY > 316 && mouseY < 316+145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "D";
@@ -600,7 +600,7 @@ function canvas1()
     if (mouseX > 195+(140/3) && mouseX < 195+(280/3) && mouseY > 455 && mouseY < 455+80 || mouseX > 195+(140/3)+15 && mouseX < 195+ (140/3)+30 && mouseY > 316 && mouseY < 316+145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "G";
@@ -617,7 +617,7 @@ function canvas1()
     if (mouseX > 195+140 && mouseX < 195+140+(140/3)-4 && mouseY > 455 && mouseY < 455 + 80 || mouseX > 195+140+15 && mouseX < 195+140+(140/3)-4 && mouseY > 316 && mouseY < 316 + 145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "B";
@@ -634,7 +634,7 @@ function canvas1()
     if (mouseX > 335+(140/3)-4 && mouseX < 335+(280/3)-4 && mouseY > 455 && mouseY < 455 + 80 || mouseX > 335+(140/3)-4 && mouseX < 335+(280/3)-19 && mouseY > 316 && mouseY < 316 + 145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "C";
@@ -652,7 +652,7 @@ function canvas1()
     if (mouseX > 335+(280/3)-4 && mouseX < 195+280-4 && mouseY > 455 && mouseY < 455 + 80 || mouseX > 335+(280/3)+13 && mouseX < 335+(280/3)+26 && mouseY > 316 && mouseY < 316 + 145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "D";
@@ -670,7 +670,7 @@ function canvas1()
     if (mouseX > 475-5 && mouseX < 475+(140/3)-5 && mouseY > 455 && mouseY < 455+80 || mouseX > 475+10 && mouseX < 475+(140/3)-5 && mouseY > 316 && mouseY < 316 + 145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "E";
@@ -688,7 +688,7 @@ function canvas1()
     if (mouseX > 475+(140/3)-5 && mouseX < 475+(280/3)-7 && mouseY > 455 && mouseY < 455+80 || mouseX > 475+(140/3)-5 && mouseX < 475+(140/3)+25 && mouseY > 316 && mouseY < 316 + 145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "F";
@@ -706,7 +706,7 @@ function canvas1()
     if (mouseX > 475+(280/3)-6 && mouseX < 615-6 && mouseY > 455 && mouseY < 455+80 || mouseX > 475+(280/3)+10 && mouseX < 475+(280/3)+25 && mouseY > 316 && mouseY < 316+145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "G";
@@ -724,7 +724,7 @@ function canvas1()
     if (mouseX > 615-6 && mouseX < 615+(140/3)-7 && mouseY > 455 && mouseY < 455+80 || mouseX > 615+10 && mouseX < 615+25 && mouseY > 316 && mouseY < 316+145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "A";
@@ -742,7 +742,7 @@ function canvas1()
     if (mouseX > 615+(140/3)-5 && mouseX < 615+(280/3)-8 && mouseY > 455 && mouseY < 455+80 || mouseX > 615+(140/3)+10 && mouseX < 615+(280/3)-8 && mouseY > 316 && mouseY < 316+145)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "B";
@@ -760,7 +760,7 @@ function canvas1()
     if (mouseX > 615+(280/3)-6 && mouseX < 755-7 && mouseY > 316 && mouseY < 455+80)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && LOCKW == false)
       {
         WORD = WORD + "C";
@@ -839,7 +839,7 @@ function canvas1()
     }
   }
 }
- 
+
 function canvas2()
 {
   background(Living_Room);
@@ -849,11 +849,11 @@ function canvas2()
   if (SCanvas2 == 0)
   {
     image(Right_Arrow,684,54,96,96);
- 
+
     if (mouseX > 684 && mouseX < 684+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Right == false)
       {
         canvas = canvas + 1;
@@ -862,18 +862,18 @@ function canvas2()
     }
   
     image(Left_Arrow,4,54,96,96);
- 
+
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Left == false)
       {
         canvas = canvas - 1;
         Left = true;
       }      
     }
- 
+
     //The suitcase puzzle is the last puzzle to be solved. CaseLock becoming 2 causes the suitcase to become unclickable, just like the piano puzzle, to show that it is not needed anymore.
     if (mouseX > 585 && mouseX < 585 + 135 && mouseY > 350 && mouseY < 500 && CaseLock == 0 || mouseX > 585 && mouseX < 585 + 135 && mouseY > 350 && mouseY < 500 && CaseLock == 1)
     {
@@ -937,11 +937,11 @@ function canvas2()
   Number3.show();
     
     image(Down_Arrow,350,510,100,80);
- 
+
     if (mouseX > 350 && mouseX < 350 + 100 && mouseY > 510 && mouseY < 510 + 80)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas2 = 0;
@@ -970,11 +970,11 @@ function canvas2()
     }
     
     image(Down_Arrow,425,500,100,80);
- 
+
     if (mouseX > 425 && mouseX < 425 + 100 && mouseY > 500 && mouseY < 500 + 80)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas2 = 0;
@@ -992,7 +992,7 @@ function canvas2()
     
     VolumeControl.value('0');
     VolumeControl.hide();
- 
+
     if (Final_Background_Music.isPlaying() == false)
     {
       Final_Background_Music.play();
@@ -1000,14 +1000,14 @@ function canvas2()
     }
   }
 }
- 
+
 function canvas3()
 {
   //Since there were only three areas made, the bedroom, living room, and kitchen, we decided to split the kitchen into left and right halves, since the design team also created multiple perspectives.
   background(Kitchen_L);
   fill(255,255,255);
   cursor(ARROW);
- 
+
   //Base image
   if (SCanvas3 == 0)
   {
@@ -1018,21 +1018,21 @@ function canvas3()
     if (mouseX > 684 && mouseX < 684+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Right == false)
       {
         canvas = canvas + 1;
         Right = true;
       }
     }
- 
+
     //Scroll Left
     image(Left_Arrow,4,54,96,96);
     
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Left == false)
       {
         canvas = canvas - 1;
@@ -1065,7 +1065,7 @@ function canvas3()
   image(Frame,150,50,500,500);
     
   image(Upper_Left,AAA,BBB,133,118);
- 
+
   image(Upper_Middle,CCC,DDD,133,118);
     
   image(Upper_Right,EEE,FFF,133,118);
@@ -1073,7 +1073,7 @@ function canvas3()
   image(Middle_Right,GGG,HHH,133,118);
   
   image(Bottom_Right,III,JJJ,133,118);  
- 
+
   image(Bottom_Middle,KKK,LLL,133,118);
   
   image(Bottom_Left,MMM,NNN,133,118);
@@ -1086,153 +1086,153 @@ function canvas3()
     {
       AAA = AAA + (133/118);
       BBB = 119;
- 
+
       CCC = CCC + (133/118);
       DDD = 119;
- 
+
       EEE = 199+2*133;
       FFF = FFF + 1;
- 
+
       GGG = 199+2*133;
       HHH = HHH + 1;
- 
+
       III = III - (133/118);
       JJJ = 119+2*118;
- 
+
       KKK = KKK - (133/118);
       LLL = 119+2*118;
- 
+
       MMM = 199;
       NNN = NNN - 1;
- 
+
       OOO = 199;
       PPP = PPP - 1;
     }
- 
+
     if (AAA > 199+133 && CCC > 199+2*133 && FFF > 119+118 && HHH > 119+2*118 && III < 199+133 && KKK < 199 && NNN < 119+118 && PPP < 119)
     {
       BOX = 2;
     }
- 
+
     if (BOX == 2)
     {
       AAA = AAA + (133/118);
       BBB = 119;
- 
+
       CCC = 199+2*133;
       DDD = DDD + 1;
- 
+
       EEE = 199+2*133;
       FFF = FFF + 1;
- 
+
       GGG = GGG - (133/118);
       HHH = 119+2*118;
- 
+
       III = III - (133/118);
       JJJ = 119+2*118;
- 
+
       KKK = 199;
       LLL = LLL - 1;
- 
+
       MMM = 199;
       NNN = NNN - 1;
- 
+
       OOO = OOO + (133/118);
       PPP = 119;
     }
- 
+
     if (AAA > 199+2*133 && DDD > 119+118 && FFF > 119+2*118 && GGG < 199+133 && III < 199 && LLL < 119+118 && NNN < 119 && OOO > 199+133)
     {
       BOX = 3;
     }
- 
+
     if (BOX == 3)
     {
       AAA = 199+2*133;
       BBB = BBB + 1;
- 
+
       CCC = 199+2*133;
       DDD = DDD + 1;
- 
+
       EEE = EEE - (133/118);
       FFF = 119+2*118;
- 
+
       GGG = GGG - (133/118);
       HHH = 119+2*118;
- 
+
       III = 199;
       JJJ = JJJ - 1;
- 
+
       KKK = 199;
       LLL = LLL - 1;
- 
+
       MMM = MMM + (133/118);
       NNN = 119;
- 
+
       OOO = OOO + (133/118);
       PPP = 119;
     }
- 
+
     if (BBB > 119+118 && DDD > 119+2*118 && EEE < 199+133 && GGG < 199 && JJJ < 119+118 && LLL < 119 && MMM > 199+133 && OOO > 199+2*133)
     {
       BOX = 4;
     }
- 
+
     if (BOX == 4)
     {
       AAA = 199+2*133;
       BBB = BBB + 1;
- 
+
       CCC = CCC - (133/118);
       DDD = 119+2*118;
- 
+
       EEE = EEE - (133/118);
       FFF = 119+2*118;
- 
+
       GGG = 199;
       HHH = HHH - 1;
- 
+
       III = 199;
       JJJ = JJJ - 1;
- 
+
       KKK = KKK + (133/118);
       LLL = 119;
- 
+
       MMM = MMM + (133/118);
       NNN = 119;
- 
+
       OOO = 199+2*133;
       PPP = PPP + 1;
     }
- 
+
     if (BBB > 119+2*118 && CCC < 199+133 && EEE < 199 && HHH < 119+118 && JJJ < 119 && KKK > 199+133 && MMM > 199+2*133 && PPP > 119+118)
     {
       BOX = 5;
     }
- 
+
     if (BOX == 5)
     {
       AAA = AAA - (133/118);
       BBB = 119+2*118;
- 
+
       CCC = CCC - (133/118);
       DDD = 119+2*118;
- 
+
       EEE = 199;
       FFF = FFF - 1;
- 
+
       GGG = 199;
       HHH = HHH - 1;
- 
+
       III = III + (133/118);
       JJJ = 119;
- 
+
       KKK = KKK + (133/118);
       LLL = 119;
- 
+
       MMM = 199+2*133;
       NNN = NNN + 1;
- 
+
       OOO = 199+2*133;
       PPP = PPP + 1;
     }
@@ -1241,104 +1241,104 @@ function canvas3()
     {
       BOX = 6;
     }
- 
+
     if (BOX == 6)
     {
       AAA = AAA - (133/118);
       BBB = 119+2*118;
- 
+
       CCC = 199;
       DDD = DDD - 1;
- 
+
       EEE = 199;
       FFF = FFF - 1;
- 
+
       GGG = GGG + (133/118);
       HHH = 119;
- 
+
       III = III + (133/118);
       JJJ = 119;
- 
+
       KKK = 199+2*133;
       LLL = LLL + 1;
- 
+
       MMM = 199+2*133;
       NNN = NNN + 1;
- 
+
       OOO = OOO - (133/118);
       PPP = 119+2*118;
     }
- 
+
     if (AAA < 199 && DDD < 119+118 && FFF < 119 && GGG > 199+133 && III > 199+2*133 && LLL > 119+118 && NNN > 119+2*118 && OOO < 199+133)
     {
       BOX = 7;
     }
- 
+
     if (BOX == 7)
     {
       AAA = 199;
       BBB = BBB - 1;
- 
+
       CCC = 199;
       DDD = DDD - 1;
- 
+
       EEE = EEE + (133/118);
       FFF = 119;
- 
+
       GGG = GGG + (133/118);
       HHH = 119;
- 
+
       III = 199+2*133;
       JJJ = JJJ + 1;
- 
+
       KKK = 199+2*133;
       LLL = LLL + 1;
- 
+
       MMM = MMM - (133/118);
       NNN = 119+2*118;
- 
+
       OOO = OOO - (133/118);
       PPP = 119+2*118;
     }
- 
+
     if (BBB < 119+118 && DDD < 119 && EEE > 199+133 && GGG > 199+2*133 && JJJ > 119+118 && LLL > 119+2*118 && MMM < 199+133 && OOO < 199+2*133)
     {
       BOX = 8;
     }
- 
+
     if (BOX == 8)
     {
       AAA = 199;
       BBB = BBB - 1;
- 
+
       CCC = CCC + (133/118);
       DDD = 119;
- 
+
       EEE = EEE + (133/118);
       FFF = 119;
- 
+
       GGG = 199+2*133;
       HHH = HHH + 1;
- 
+
       III = 199+2*133;
       JJJ = JJJ + 1;
- 
+
       KKK = KKK - (133/118);
       LLL = 119+2*118;
- 
+
       MMM = MMM - (133/118);
       NNN = 119+2*118;
- 
+
       OOO = 199;
       PPP = PPP - 1;
     }
- 
+
     //This causes the entire cycle to continue forever. Only by getting the final piece does the puzzle stop.
     if (BBB < 119 && CCC > 199+133 && EEE > 199+2*133 && HHH > 119+118 && JJJ > 119+2*118 && KKK < 199+133 && MMM < 199+2*133 && PPP < 119+118)
     {
       BOX = 1;
     }
- 
+
     //This can only be accessed if the middle piece is collected. The program knows this through the FaceScore variable, which becomes 1 once the missing piece is picked up.
     if (mouseX > 199+133 && mouseX < 199+2*133 && mouseY > 119+118 && mouseY < 119+2*118 && FaceScore == 1)
     {
@@ -1355,31 +1355,31 @@ function canvas3()
         text("4ξ",400,15);
       }
     }
- 
+
     //This is the intended image of the painting, only found once the puzzle is complete. The pieces return to their intended positions, and the missing piece is returned to its rightful place.
     if (BOX == 9)
     {
       AAA = 199;
       BBB = 119;
- 
+
       CCC = 199+133;
       DDD = 119;
- 
+
       EEE = 199+2*133;
       FFF = 119;
- 
+
       GGG = 199+2*133;
       HHH = 119+118;
- 
+
       III = 199+2*133;
       JJJ = 119+2*118;
- 
+
       KKK = 199+133;
       LLL = 119+2*118;
- 
+
       MMM = 199;
       NNN = 119+2*118;
- 
+
       OOO = 199;
       PPP = 119+118;
       
@@ -1398,11 +1398,11 @@ function canvas3()
   //ROTATING FRAME END
   
   image(Down_Arrow,365,520,90,85);
- 
+
     if (mouseX > 365 && mouseX < 365 + 90 && mouseY > 520 && mouseY < 520 + 85)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas3 = 0;
@@ -1410,7 +1410,7 @@ function canvas3()
     }
   }
 }
- 
+
 function canvas4()
 {
   background(Kitchen_R_O);
@@ -1424,11 +1424,11 @@ function canvas4()
     
     //Scroll Left
     image(Left_Arrow,4,54,96,96);
- 
+
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Left == false)
       {
         canvas = canvas - 1;
@@ -1493,11 +1493,11 @@ function canvas4()
     
     //Exit
     image(Down_Arrow,60,375,120,100);
- 
+
     if (mouseX > 60 && mouseX < 60 + 120 && mouseY > 375 && mouseY < 375+100)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas4 = 0;
@@ -1540,11 +1540,11 @@ function canvas4()
     
     //Exit
     image(Down_Arrow,500,340,120,100);
- 
+
     if (mouseX > 500 && mouseX < 500 + 120 && mouseY > 340 && mouseY < 340 + 100)
     {
       cursor(HAND);
- 
+
       //If room is 0, then the kitchen must be light. Therefore, when exiting from the lightswitch subcanvas the kitchen will still be light.
       if (mouseIsPressed == true && Room == 0)
       {
@@ -1558,7 +1558,7 @@ function canvas4()
       }
     }
   }
- 
+
   //Dark Kitchen
   if (SCanvas4 == 3)
   { 
@@ -1567,11 +1567,11 @@ function canvas4()
     
     //Scroll Left. Just because the kitchen is dark, it doesn't mean that the player still can't go to other rooms.
     image(Left_Arrow,4,54,96,96);
- 
+
     if (mouseX > 4 && mouseX < 4+96 && mouseY > 54 && mouseY < 54+96)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && Left == false)
       {
         canvas = canvas - 1;
@@ -1584,7 +1584,7 @@ function canvas4()
     if (mouseX > 80 && mouseX < 160 && mouseY > 275 && mouseY < 275 + 50)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas4 = 4;
@@ -1596,7 +1596,7 @@ function canvas4()
     if (mouseX > 622 && mouseX < 635 && mouseY > 250 && mouseY < 275)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas4 = 2;
@@ -1607,7 +1607,7 @@ function canvas4()
   if (SCanvas4 == 4)
   {  
     Inventory();
- 
+
     //Bottles in Darkness Close-Up
     image(Bottles_D,0,0,800,600);
     
@@ -1629,11 +1629,11 @@ function canvas4()
     //Leave
       //If the player is spooked by the colors, they can leave if they wish.
     image(Down_Arrow,60,375,120,100);
- 
+
     if (mouseX > 60 && mouseX < 60 + 120 && mouseY > 375 && mouseY < 375+100)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas4 = 3;
@@ -1646,7 +1646,7 @@ function canvas4()
   if (SCanvas4 == 5)
   {
     Inventory();
- 
+
     image(Sink,0,0,800,600);
     
     if (mouseX > 545 && mouseX < 545+32 && mouseY > 348 && mouseY < 348+32)
@@ -1672,11 +1672,11 @@ function canvas4()
     
     //Exit.
     image(Down_Arrow,630,500,90,85);
- 
+
     if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas4 = 0;
@@ -1710,11 +1710,11 @@ function canvas4()
     
     //Exit
     image(Down_Arrow,630,500,90,85);
- 
+
     if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true)
       {
         SCanvas4 = 0;
@@ -1744,11 +1744,11 @@ function canvas4()
         
     //Exit
     image(Down_Arrow,630,500,90,85);
- 
+
     if (mouseX > 630 && mouseX < 630+90 && mouseY > 500 && mouseY < 500+85)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && ARROWLOCK == false)
       {
         if (SoundC.isPlaying() == false)
@@ -1772,11 +1772,11 @@ function canvas4()
     
     //Exit
     image(Down_Arrow,630,500,90,85);
- 
+
     if (mouseX > 630 && mouseX < 630 + 90 && mouseY > 500 && mouseY < 500 + 85)
     {
       cursor(HAND);
- 
+
       if (mouseIsPressed == true && ARROWLOCK == false)
       {
         SCanvas4 = 8;
@@ -1785,9 +1785,9 @@ function canvas4()
     }
   }
 }
- 
+
 //By now, it's likely that the player has also noticed the various symbols placed around the canvases once the puzzles are solved. These are the answers to the final puzzle problem. In the event that the player is some hyper genious and solve the puzzles out-of-order, the numbers are there to tell the player which order the symbols go in, from left to right.
- 
+
 //Hooray, you won. This is all you get. I don't really know what else to give you, but you could play again if you really like. Maybe see how fast you can do the puzzle? Speedchallenge?
 function canvas5()
 {
@@ -1822,142 +1822,142 @@ function canvas5()
       VolumeControl = createSlider(0,100,100);
       VolumeControl.position(575,100);
       VolumeControl.style('width', '100px');
- 
+
       musiclock = false;
       mute = 1.0
- 
+
       createCanvas(800,600);
- 
+
       Right = false;
       Left = false;
- 
+
       //Bedroom variables
       canvas = 1;
- 
+
       SCanvas1 = 0;
       WORD = "";
       LOCKW = false;
       LOCKPIANO = 0;
- 
+
       Panel = 0;
       FaceScore = 0;
- 
+
       WORDA = 0;
       WORDC = 0;
       WORDE = 0;
       WORDF = 0;
- 
+
       //Living Room variables
       SCanvas2 = 0;
- 
+
       //Suitcase Puzzle variables
       Number1 = createSlider(0,9,0);
       Number1.position(650,150);
- 
+
       Number2 = createSlider(0,9,0);
       Number2.position(650,200);
- 
+
       Number3 = createSlider(0,9,0);
       Number3.position(650,250);
- 
+
       CaseLock = 0;
       GlassScore = 0;
       GlassLock = false;
- 
+
       //Final Puzzle variables
- 
+
       selectionBox = createSelect();
       selectionBox.option("α");
       selectionBox.option("ε");
       selectionBox.position(515-380,490);
       selectionBox.size(50,10);
- 
+
       selectionBox2 = createSelect();
       selectionBox2.option("Φ");
       selectionBox2.option("Ψ");
       selectionBox2.option("Ξ");
       selectionBox2.position(515-280,490);
       selectionBox2.size(50,10);
- 
+
       selectionBox3 = createSelect();
       selectionBox3.option("δ");
       selectionBox3.option("ω");
       selectionBox3.position(515-180,490);
       selectionBox3.size(50,10);
- 
+
       selectionBox4 = createSelect();
       selectionBox4.option("η");
       selectionBox4.option("ξ");
       selectionBox4.position(515-80,490);
       selectionBox4.size(50,10);
- 
+
       stateOfBox = 1;
- 
+
       L = 50;
       BOMB = 375;
       Growth = 0;
- 
+
       BOMB2 = 375
       L2 = 50;
- 
+
       BOMB3 = 375
       L3 = 50;
- 
+
       //Left Kitchen variables
       SCanvas3 = 0;
- 
+
       //Painting Puzzle variables
       BOX = 1;
- 
+
       AAA = 199;
       BBB = 119;
- 
+
       CCC = 199+133;
       DDD = 119;
- 
+
       EEE = 199+2*133;
       FFF = 119;
- 
+
       GGG = 199+2*133;
       HHH = 119+118;
- 
+
       III = 199+2*133;
       JJJ = 119+2*118;
- 
+
       KKK = 199+133;
       LLL = 119+2*118;
- 
+
       MMM = 199;
       NNN = 119+2*118;
- 
+
       OOO = 199;
       PPP = 119+118;
- 
+
       //Kitchen Right Variables
       SCanvas4 = 0;
- 
+
       LightLock = false;
       Room = 0;
       KeyScore = 0;
- 
+
       FridgeScore = 0;
- 
+
       //Combination variables
       A = 1;
       B = 1;
       C = 1;
- 
+
       HALTA = false;
       HALTB = false;
- 
+
       HALTC = false;
       HALTD = false;
- 
+
       HALTE = false;
       HALTF = false;
- 
+
       ARROWLOCK = false;
- 
+
       //Final Puzzle Requirements
       //If these variables aren't met, the final puzzle can't be done.
       FINALFACE = 0;
@@ -1965,116 +1965,116 @@ function canvas5()
     }
   }
 }
- 
+
 function Combination()
 {
   //For this combination puzzle, the standard lock and variable rules apply. In order to keep variables from increasing too much, locks are in place so that they only increase by 1. Every button has this.
   
   //Input 1
   //Toggle Up 1. 
- 
+
   fill(150,150,150);
   rect(300,349,20,20);
- 
+
   if (mouseX > 300 && mouseX < 300+20 && mouseY > 349 && mouseY < 349+20)
   {
     fill(200,200,200);
     rect(300,349,20,20);
- 
+
     if (mouseIsPressed == true && HALTA == false)
     {
       fill(250,250,250);
       rect(300,349,20,20);
       HALTA = true;
- 
+
       A = A + 1;
     }
   }
- 
+
   //Number 1
- 
+
   fill(213,213,206);
   rect(280,384,60,60);
- 
+
   fill(0,0,0);
   text(+A,308,418);
- 
+
   //Toggle Down 1
- 
+
   fill(150,150,150);
   rect(300,459,20,20);
- 
+
   if (mouseX > 300 && mouseX < 300+20 && mouseY > 459 && mouseY < 459+20)
   {
     fill(200,200,200);
     rect(300,459,20,20);
- 
+
     if (mouseIsPressed == true && HALTB == false)
     {
       fill(250,250,250);
       rect(300,459,20,20);
       HALTB = true;
- 
+
       A = A - 1;
     }
   }
- 
+
   //This condition causes the number to never exceed 9 or go below 0. Therefore, it becomes cyclical. Like a normal lock.
   if (A > 9)
   {
     A = 0;
   }
- 
+
   if (A < 0)
   {
     A = 9;
   }
- 
+
   //Input 2
   //Toggle Up 2
- 
+
   fill(150,150,150);
   rect(390,349,20,20);
- 
+
   if (mouseX > 390 && mouseX < 390+20 && mouseY > 349 && mouseY < 349+20)
   {
     fill(200,200,200);
     rect(390,349,20,20);
- 
+
     if (mouseIsPressed == true && HALTC == false)
     {
       fill(250,250,250);
       rect(390,349,20,20);
       HALTC = true;
- 
+
       B = B + 1;
     }
   }
- 
+
   //Number 2
- 
+
   fill(213,213,206);
   rect(370,384,60,60);
- 
+
   fill(0,0,0);
   text(+B,398,418);
- 
+
   //Toggle Down 2
- 
+
   fill(150,150,150);
   rect(390,459,20,20);
- 
+
   if (mouseX > 390 && mouseX < 390+20 && mouseY > 459 && mouseY < 459+20)
   {
     fill(200,200,200);
     rect(390,459,20,20);
- 
+
     if (mouseIsPressed == true && HALTD == false)
     {
       fill(250,250,250);
       rect(390,459,20,20);
       HALTD = true;
- 
+
       B = B - 1;
     }
   }
@@ -2084,72 +2084,72 @@ function Combination()
   {
     B = 0;
   }
- 
+
   if (B < 0)
   {
     B = 9;
   }
- 
+
   //Input 3
   //Toggle Up 3
- 
+
   fill(150,150,150);
   rect(480,349,20,20);
- 
+
   if (mouseX > 480 && mouseX < 480+20 && mouseY > 349 && mouseY < 349+20)
   {
     fill(200,200,200);
     rect(480,349,20,20);
- 
+
     if (mouseIsPressed == true && HALTE == false)
     {
       fill(250,250,250);
       rect(480,349,20,20);
       HALTE = true;
- 
+
       C = C + 1;
     }
   }
- 
+
   //Number 3
- 
+
   fill(205,205,200);
   rect(460,384,60,60);
- 
+
   fill(0,0,0);
   text(+C,488,418);
- 
+
   //Toggle Down 3
- 
+
   fill(150,150,150);
   rect(480,459,20,20);
- 
+
   if (mouseX > 480 && mouseX < 480+20 && mouseY > 459 && mouseY < 459+20)
   {
     fill(200,200,200);
     rect(480,459,20,20);
- 
+
     if (mouseIsPressed == true && HALTF == false)
     {
       fill(250,250,250);
       rect(480,459,20,20);
       HALTF = true;
- 
+
       C = C - 1;
     }
   }
- 
+
   //This condition causes the number to never exceed 9 or go below 0. Therefore, it becomes cyclical. Like a normal lock.
   if (C > 9)
   {
     C = 0;
   }
- 
+
   if (C < 0)
   {
     C = 9;
   }
- 
+
   //This is the solution to the puzzle.
   if (A == 5 && B == 8 && C == 6)
   {
@@ -2176,39 +2176,39 @@ function Combination()
     }
   }
 }
- 
+
 function Slider()
 {
   //SLIDER PUZZLE
- 
+
   fill(255,255,255);
- 
+
   //The sliders are hidden in every other canvas and subcanvas for consistency and clarity. For the puzzle itself, simply inputt
   text(+Number1.value(),705,65);
- 
+
   text(+Number2.value(),705,115);
- 
+
   text(+Number3.value(),705,165);
- 
+
   fill(255,255,255);
   rect(680,20,60,20);
   fill(0,0,0);
   text("Enter",697,35);
- 
+
   if (mouseX > 680 && mouseX < 680+60 && mouseY > 20 && mouseY < 20+20)
   {
     fill(200,200,200);
     rect(680,20,60,20);
     fill(0,0,0);
     text("Enter",697,35);
- 
+
     if (mouseIsPressed == true)
     {
       fill(150,150,150);
       rect(680,20,60,20);
       fill(0,0,0);
       text("Enter",697,35);
- 
+
       if (Number1.value() == 3 && Number2.value() == 1 && Number3.value() == 4)
       {
         fill(0,255,0);
@@ -2219,56 +2219,61 @@ function Slider()
         SCanvas2 = 2;
         
         CaseLock = 1;
+        
+        if (SoundU.isPlaying() == false)
+        {
+          SoundU.play();
+        }
       }
     }
   }
 }
- 
+
 function Stretchbox()
 {
   fill(255,0,0);
   rect(515,BOMB,50,L);
- 
+
   fill(255,0,0);
   rect(515+85,BOMB2,50,L2);
- 
+
   fill(255,0,0);
   rect(515+180,BOMB3,50,L3);
- 
+
   if (selectionBox.value() == "ε" && selectionBox2.value() == "Ξ" && selectionBox3.value() == "ω" && 
       selectionBox4.value() == "ξ" ) 
   {
     Growth = 1;
   }
- 
+
   if (Growth == 1)
- 
+
   {
     L = L + 1;
     BOMB = BOMB - 1
- 
+
     L2 = L2 + 1;
     BOMB2 = BOMB2 -1 
- 
+
     L3 = L3 + 1;
     BOMB3 = BOMB3 -1
- 
+
     if (L > 160 && BOMB < 260 && L2 > 160 && BOMB2 < 260 && L3 > 160 && BOMB3 <260)
     {
       Growth = 2
     }
   }
- 
+
   if (Growth == 2)
   {
     L = 165;
     BOMB = 260
     rect(515,BOMB,50,L);
- 
+
     L2 = 165;
     BOMB2 = 260
     rect(515+85,BOMB2,50,L2);
- 
+
     L3 = 165;
     BOMB3 = 260
     rect(515+180,BOMB3,50,L3);
@@ -2276,10 +2281,10 @@ function Stretchbox()
     canvas = 5;
   }
 }
- 
+
 function showResult()
 {
- 
+
   fill(255,255,255);
   text("Gas level",515,250);
   fill(255,255,255);
@@ -2290,9 +2295,9 @@ function showResult()
   text("50%-",515-30,345);
   fill(255,255,255);
   text("100%-",515-40,265);
- 
+
   // bomb 
- 
+
   if(selectionBox.value() == "ε")
   {
     fill(88,214,0);
@@ -2314,7 +2319,7 @@ function showResult()
     rect(515-90,440,50,90);
   }
 } 
- 
+
 function mouseReleased()
 {
   if (Right)
@@ -2346,27 +2351,27 @@ function mouseReleased()
   {
     HALTA = false; 
   }
- 
+
   if (HALTB)
   {
     HALTB = false; 
   }
- 
+
   if (HALTC)
   {
     HALTC = false; 
   }
- 
+
   if (HALTD)
   {
     HALTD = false; 
   }
- 
+
   if (HALTE)
   {
     HALTE = false; 
   }
- 
+
   if (HALTF)
   {
     HALTF = false; 
@@ -2382,13 +2387,13 @@ function mouseReleased()
     musiclock == false;
   }
 }
- 
+
 function Inventory()
 {
   strokeWeight(5);
   fill(90,30,0);
   rect(2,497,280,100);
- 
+
   strokeWeight(5);
   fill(255,255,130);
   rect(10,507,82,80);
@@ -2397,22 +2402,20 @@ function Inventory()
   {
     image(Middle_Middle,20,520,60,60)
   }
- 
+
   rect(10+90,507,82,80);
   
   if (GlassScore == 1)
   {
     image(Glass_Shard,110,520,60,60)
   }
- 
+
   rect(10+180,507,83,80);
   
   if (KeyScore == 1)
   {
     image(Key,200,520,60,60);
   }
- 
+
   strokeWeight(1);
 }
- 
- 
