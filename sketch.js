@@ -106,7 +106,7 @@ function preload()
  
     //Open Fridge
   Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/vxtevd9do596m2e/Fridge%20Open.png?dl=0');
-    
+ 
     //Far-away image of the Piano clue.
   Small_Note = loadImage('https://dl.dropboxusercontent.com/s/d27j93z57dls3e6/Note.png?dl=0');
  
@@ -118,15 +118,35 @@ function preload()
  
   Victory_2 = loadImage('https://dl.dropboxusercontent.com/s/y9kx3jkyej1stug/Victory%202.png?dl=0');
   
-  SoundS = loadSound('https://dl.dropboxusercontent.com/s/x4vhpc58kpltovf/Swtich%20.mp3?dl=0');
-  SoundG = loadSound('https://dl.dropboxusercontent.com/s/jyda0u7g5s2flw2/Glass.mp3?dl=0');
-  SoundU = loadSound('https://dl.dropboxusercontent.com/s/n5rwsqz8gsbgywi/unlocking%20.mp3?dl=0');
-  SoundO = loadSound('https://dl.dropboxusercontent.com/s/l2e74ji1zuzzr8u/Fridge%20.mp3?dl=0');
-  SoundC = loadSound('https://dl.dropboxusercontent.com/s/ugk9lhquz6v9nho/Fridge%20close.mp3?dl=0');
+  SoundS = loadSound('https://dl.dropboxusercontent.com/s/bfkboiyjzuex7q5/Switch.m4a?dl=0');
+  SoundG = loadSound('https://dl.dropboxusercontent.com/s/msl6nnii1yy81py/Glass.m4a?dl=0');
+  SoundU = loadSound('https://dl.dropboxusercontent.com/s/3be6i5rum6sa60n/Unlock.m4a?dl=0');
+  SoundO = loadSound('https://dl.dropboxusercontent.com/s/j6gokxee8w8p6c3/Fridge%20Open.m4a?dl=0');
+  SoundC = loadSound('https://dl.dropboxusercontent.com/s/ftw7kg1u9eplp9c/Fridge%20Close.m4a?dl=0');
+  
+  CSound = loadSound('https://dl.dropboxusercontent.com/s/winl0egutxsbvm8/C%20.mp3?dl=0');
+  DSound = loadSound('https://dl.dropboxusercontent.com/s/o7ssqs71c9d2qdc/D.mp3?dl=0');
+  ESound = loadSound('https://dl.dropboxusercontent.com/s/aia2ducfe2ff77j/E.mp3?dl=0');
+  FSound = loadSound('https://dl.dropboxusercontent.com/s/rgfi97j6zb2wjb6/F.mp3?dl=0');
+  GSound = loadSound('https://dl.dropboxusercontent.com/s/ej3a0r57ltaa63j/G%20.mp3?dl=0');
+  ASound = loadSound('https://dl.dropboxusercontent.com/s/eszpo1s4kdced08/A.mp3?dl=0');
+  BSound = loadSound('https://dl.dropboxusercontent.com/s/sr49gyewxevalqm/B%20.mp3?dl=0');
+  
+  Background_Music = loadSound('https://dl.dropboxusercontent.com/s/4g31kcptp2tqcz7/Escape%20room%20sound%203%20RE.mp3?dl=0');
+  
+  Final_Background_Music = loadSound('https://dl.dropboxusercontent.com/s/ljuxsooq1xzlc5x/Escape%20room%20sound%201.mp3?dl=0')
+  
 }
  
 function setup()
 {
+  VolumeControl = createSlider(0,100,100);
+  VolumeControl.position(575,100);
+  VolumeControl.style('width', '100px');
+  
+  musiclock = false;
+  mute = 1.0
+  
   createCanvas(800,600);
  
   Right = false;
@@ -269,7 +289,7 @@ function draw()
 {  
   //I must hide the sliders for the other canvases.
   if (canvas == 1)
-  {
+  {     
     canvas1();
     Number1.hide();
     Number2.hide();
@@ -347,6 +367,17 @@ function draw()
   {
     canvas = 1;
   }
+  
+  fill(0,0,0);
+  text("Volume",595,19);
+  
+  if (Background_Music.isPlaying() == false)
+  {
+    Background_Music.play();
+    Background_Music.loop();
+  }
+ 
+  Background_Music.setVolume(((VolumeControl.value()) * 0.01));
 }
  
 function canvas1()
@@ -451,6 +482,11 @@ function canvas1()
         WORD = WORD + "F";
         LOCKW = true;
         WORDF = 1;
+        
+        if (FSound.isPlaying() == false)
+        {
+          FSound.play();
+        }
       }
     }
     
@@ -465,6 +501,11 @@ function canvas1()
         WORD = WORD + "A";
         LOCKW = true;
         WORDA = 1;
+        
+        if (ASound.isPlaying() == false)
+        {
+          ASound.play();
+        }
       }
     }
     
@@ -479,6 +520,11 @@ function canvas1()
         WORD = WORD + "C";
         LOCKW = true;
         WORDC = 1;
+        
+        if (CSound.isPlaying() == false)
+        {
+          CSound.play();
+        }
       }
     }
     
@@ -493,6 +539,11 @@ function canvas1()
         WORD = WORD + "E";
         LOCKW = true;
         WORDE = 1;
+        
+        if (ESound.isPlaying() == false)
+        {
+          ESound.play();
+        }
       }
     }
     
@@ -507,6 +558,11 @@ function canvas1()
       {
         WORD = WORD + "D";
         LOCKW = true;
+        
+        if (DSound.isPlaying() == false)
+        {
+          DSound.play();
+        }
       }
     }
     
@@ -519,6 +575,11 @@ function canvas1()
       {
         WORD = WORD + "G";
         LOCKW = true;
+        
+        if (GSound.isPlaying() == false)
+        {
+          GSound.play();
+        }
       }
     }
     
@@ -531,6 +592,11 @@ function canvas1()
       {
         WORD = WORD + "B";
         LOCKW = true;
+        
+        if (BSound.isPlaying() == false)
+        {
+          BSound.play();
+        }
       }
     }
     
@@ -543,6 +609,11 @@ function canvas1()
       {
         WORD = WORD + "C";
         LOCKW = true;
+        
+        if (CSound.isPlaying() == false)
+        {
+          CSound.play();
+        }
       }
     }
     
@@ -556,6 +627,11 @@ function canvas1()
       {
         WORD = WORD + "D";
         LOCKW = true;
+        
+        if (DSound.isPlaying() == false)
+        {
+          DSound.play();
+        }
       }
     }
     
@@ -569,6 +645,11 @@ function canvas1()
       {
         WORD = WORD + "E";
         LOCKW = true;
+        
+        if (ESound.isPlaying() == false)
+        {
+          ESound.play();
+        }
       }
     }
     
@@ -582,6 +663,11 @@ function canvas1()
       {
         WORD = WORD + "F";
         LOCKW = true;
+        
+        if (FSound.isPlaying() == false)
+        {
+          FSound.play();
+        }
       }
     }
     
@@ -595,6 +681,11 @@ function canvas1()
       {
         WORD = WORD + "G";
         LOCKW = true;
+        
+        if (GSound.isPlaying() == false)
+        {
+          GSound.play();
+        }
       }
     }
     
@@ -608,6 +699,11 @@ function canvas1()
       {
         WORD = WORD + "A";
         LOCKW = true;
+        
+        if (ASound.isPlaying() == false)
+        {
+          ASound.play();
+        }
       }
     }
     
@@ -621,6 +717,11 @@ function canvas1()
       {
         WORD = WORD + "B";
         LOCKW = true;
+        
+        if (BSound.isPlaying() == false)
+        {
+          BSound.play();
+        }
       }
     }
     
@@ -634,6 +735,11 @@ function canvas1()
       {
         WORD = WORD + "C";
         LOCKW = true;
+        
+        if (CSound.isPlaying() == false)
+        {
+          CSound.play();
+        }
       }
     }
     
@@ -761,9 +867,21 @@ function canvas2()
     {
       cursor(HAND);
       
-      if (mouseIsPressed == true && GlassScore == 1 && FINALFACE == 1 && FINALFRIDGE == 1 && GlassLock == false)
+      if (mouseIsPressed == true && GlassScore == 1 && FINALFACE == 1 && FINALFRIDGE == 1 && GlassLock == false && musiclock == false)
       {
         SCanvas2 = 3;
+        
+        if (mute == 0)
+        {
+          Background_Music.setVolume(0.0);
+          mute = 1;
+        }
+        else if (mute == 1)
+        {
+          Background_Music.setVolume(1.0);
+          mute = 0; 
+        }
+        musiclock = true;
         
         //This causes the glass shard to disappear from the inventory.
         GlassScore = 2;
@@ -841,6 +959,15 @@ function canvas2()
     
     Stretchbox();
     showResult();
+    
+    VolumeControl.value('0');
+    VolumeControl.hide();
+ 
+    if (Final_Background_Music.isPlaying() == false)
+    {
+      Final_Background_Music.play();
+      Final_Background_Music.loop();
+    }
   }
 }
  
@@ -1318,6 +1445,10 @@ function canvas4()
       //Fridge is open.
       if (mouseIsPressed == true && FridgeScore == 1)
       {
+        if (SoundO.isPlaying() == false)
+        {
+          SoundO.play();
+        }
         SCanvas4 = 8;
       }
     }
@@ -1358,12 +1489,20 @@ function canvas4()
       //The use of Light Lock is to to limit Room. Without it, one click of the lightswitch could make Room equal 11. Therefore, LgihtLock makes it so that the variable increases and decreases once per click. The use of the Room variable is to provide consistency in the game for the dark kitchen and the light kitchen.
       if (mouseIsPressed == true && LightLock == false && Room == 0)
       {
+       if (SoundS.isPlaying() == false)
+        {
+          SoundS.play(); 
+        }
         SCanvas4 = 3;
         Room = Room + 1;
       }
       
       else if (mouseIsPressed == true && LightLock == false && Room == 1)
       {
+        if (SoundS.isPlaying() == false)
+        {
+          SoundS.play(); 
+        }
         SCanvas4 = 0;
         Room = Room - 1;
       }
@@ -1448,8 +1587,12 @@ function canvas4()
       cursor(HAND);
       
       if (mouseIsPressed == true)
-      { 
-         SCanvas4 = 5;
+      {
+        if (SoundG.isPlaying() == false)
+        {
+          SoundG.play(); 
+        }
+        SCanvas4 = 5;
       }
     }
     
@@ -1472,7 +1615,6 @@ function canvas4()
     //Here, the key is accessable. The player just needs to click on it to have it enter their inventory.
   if (SCanvas4 == 5)
   {
-    
     Inventory();
  
     image(Sink,0,0,800,600);
@@ -1518,6 +1660,10 @@ function canvas4()
       
       if (mouseIsPressed == true)
       {
+        if (SoundU.isPlaying() == false)
+        {
+          SoundU.play();
+        }
         SCanvas4 = 7;
       }
     }
@@ -1575,6 +1721,10 @@ function canvas4()
  
       if (mouseIsPressed == true && ARROWLOCK == false)
       {
+        if (SoundC.isPlaying() == false)
+        {
+          SoundC.play();
+        }
         SCanvas4 = 0;
         ARROWLOCK = true;
       }
@@ -1613,6 +1763,8 @@ function canvas5()
 {
   background(255,255,255);
   
+  Final_Background_Music.setVolume(0.0);
+  
   image(Victory_1,0,0,800,600);
   
   image(Victory_2,190,0,431,300);
@@ -1637,12 +1789,19 @@ function canvas5()
       fill(0,0,0);
       text("Replay?",380,322);
       
+      VolumeControl = createSlider(0,100,100);
+      VolumeControl.position(575,100);
+      VolumeControl.style('width', '100px');
+ 
+      musiclock = false;
+      mute = 1.0
+ 
       createCanvas(800,600);
  
       Right = false;
       Left = false;
  
-      //Bedroom
+      //Bedroom variables
       canvas = 1;
  
       SCanvas1 = 0;
@@ -1658,10 +1817,10 @@ function canvas5()
       WORDE = 0;
       WORDF = 0;
  
-      //Living Room
+      //Living Room variables
       SCanvas2 = 0;
  
-      //Suitcase Puzzle
+      //Suitcase Puzzle variables
       Number1 = createSlider(0,9,0);
       Number1.position(650,150);
  
@@ -1675,7 +1834,7 @@ function canvas5()
       GlassScore = 0;
       GlassLock = false;
  
-      //Final Puzzle
+      //Final Puzzle variables
  
       selectionBox = createSelect();
       selectionBox.option("α");
@@ -1714,10 +1873,10 @@ function canvas5()
       BOMB3 = 375
       L3 = 50;
  
-      //Left Kitchen
+      //Left Kitchen variables
       SCanvas3 = 0;
  
-      //Painting Puzzle
+      //Painting Puzzle variables
       BOX = 1;
  
       AAA = 199;
@@ -1744,6 +1903,7 @@ function canvas5()
       OOO = 199;
       PPP = 119+118;
  
+      //Kitchen Right Variables
       SCanvas4 = 0;
  
       LightLock = false;
@@ -1752,6 +1912,7 @@ function canvas5()
  
       FridgeScore = 0;
  
+      //Combination variables
       A = 1;
       B = 1;
       C = 1;
@@ -1767,6 +1928,8 @@ function canvas5()
  
       ARROWLOCK = false;
  
+      //Final Puzzle Requirements
+      //If these variables aren't met, the final puzzle can't be done.
       FINALFACE = 0;
       FINALFRIDGE = 0;
     }
@@ -1976,6 +2139,11 @@ function Combination()
     
     //This is one of the variables needed to access the final puzzle.
     FINALFRIDGE = 1;
+    
+    if (SoundO.isPlaying() == false)
+    {
+      SoundO.play();
+    }
   }
 }
  
@@ -1985,15 +2153,13 @@ function Slider()
  
   fill(255,255,255);
  
-  //The sliders are hidden in every other canvas and subcanvas for consistency and clarity. For the puzzle itself, simply inputting the correct numbers is enough.
+  //The sliders are hidden in every other canvas and subcanvas for consistency and clarity. For the puzzle itself, simply inputt
   text(+Number1.value(),705,65);
  
   text(+Number2.value(),705,115);
  
   text(+Number3.value(),705,165);
  
-  //This is to slow down the pace. If there was no submit buttom, the puzzle would immediately switch to the open suicase subcanvas, which is too suddent.
-  
   fill(255,255,255);
   rect(680,20,60,20);
   fill(0,0,0);
@@ -2022,14 +2188,12 @@ function Slider()
         
         SCanvas2 = 2;
         
-        //CaseLock becoming 1 means that clicking on the suitcase will skip the puzzle directly to the open suitcase.
         CaseLock = 1;
       }
     }
   }
 }
  
-//This is the primary function needed for the final puzzle. It isn't actually difficult. It is more a test of whether the player has paid attention to the variosu symbosl appearing throughout the game.
 function Stretchbox()
 {
   fill(255,0,0);
@@ -2047,8 +2211,8 @@ function Stretchbox()
     Growth = 1;
   }
  
-  //The Growth variable is to serve as a way of making the bars seem like gauges. Once the correct symbols are chosen, the bars will increase up to a point, which is stopped by the below conditions, and enter Growth = 2.
   if (Growth == 1)
+ 
   {
     L = L + 1;
     BOMB = BOMB - 1
@@ -2065,10 +2229,8 @@ function Stretchbox()
     }
   }
  
-  //These are the final positions for the gauges. Once the gauges reach their maximum, the game is won.
   if (Growth == 2)
   {
-    fill(0,255,0)
     L = 165;
     BOMB = 260
     rect(515,BOMB,50,L);
@@ -2085,7 +2247,6 @@ function Stretchbox()
   }
 }
  
-//This is text for the puzzle.
 function showResult()
 {
  
@@ -2102,7 +2263,6 @@ function showResult()
  
   // bomb 
  
-  //Selecting the right answer creates a green rectangle to show the correct answer has been selected
   if(selectionBox.value() == "ε")
   {
     fill(88,214,0);
@@ -2125,7 +2285,6 @@ function showResult()
   }
 } 
  
-//These are the various locks that are used to keep variables from going crazy or to keep the exit keys from going out of wack.
 function mouseReleased()
 {
   if (Right)
@@ -2187,9 +2346,13 @@ function mouseReleased()
   {
     ARROWLOCK = false;
   }
+  
+  if (musiclock == false)
+  {
+    musiclock == false;
+  }
 }
  
-//This is the inventory function. Here, once the three scores are 1, the player can scroll through the canvases without losing them. This is to create consistency. Once the scores aren't 2, however, the images disappear, appearing as though they've been used up.
 function Inventory()
 {
   strokeWeight(5);
