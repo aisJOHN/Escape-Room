@@ -1459,11 +1459,6 @@ function canvas4()
       
       if (mouseIsPressed == true)
       {
-      	if (GlassSound.isPlaying() == false)
-      	{
-      	  GlassSound.currentTime = 4
-      	  GlassSound.play();
-      	}
         SCanvas4 = 5;
       }
     }
