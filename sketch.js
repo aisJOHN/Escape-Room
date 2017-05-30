@@ -1370,6 +1370,7 @@ function canvas4()
       {
       	if (SwitchSound.isPlaying() == false)
       	{
+      	  SwitchSound.currentTime = 7
       	  SwitchSound.play()
       	}
         SCanvas4 = 3;
@@ -1380,6 +1381,7 @@ function canvas4()
       {
         if (SwitchSound.isPlaying() == false)
       	{
+      	  SwitchSound.currentTime = 7
       	  SwitchSound.play()
       	}
         SCanvas4 = 0;
@@ -1469,6 +1471,7 @@ function canvas4()
       {
       	if (GlassSound.isPlaying() == false)
       	{
+      	  GlassSound.currentTime = 4
       	  GlassSound.play();
       	}
         SCanvas4 = 5;
