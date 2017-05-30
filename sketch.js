@@ -92,12 +92,8 @@ function preload()
     //Bottles in the Dark
   Bottles_D = loadImage('https://dl.dropboxusercontent.com/s/zpld1phoq1msspe/Bottle%20Row%20Dark.jpg?dl=0');
   
-  GlassSound = loadSound('https://dl.dropboxusercontent.com/s/jyda0u7g5s2flw2/Glass.mp3?dl=0');
-  
     //Lightswitch Photo to go between the Light Kitchen and the dark Kitchen
   Lightswitch = loadImage('https://dl.dropboxusercontent.com/s/a1v25zw8zbkd3dn/Light%20Switch.jpg?dl=0');
-  
-  SwitchSound = loadSound('https://dl.dropboxusercontent.com/s/x4vhpc58kpltovf/Swtich%20.mp3?dl=0');
   
     //Dark Kitchen
   Kitchen_R_D = loadImage('https://dl.dropboxusercontent.com/s/ypbp2h1lvzt7umh/Kitchen%20Right%20Dark.jpg?dl=0');
@@ -114,15 +110,9 @@ function preload()
     //Closed Fridge
   Fridge_C = loadImage('https://dl.dropboxusercontent.com/s/srg3x1pmy8dsd1y/Fridge%20Closed.png?dl=0');
  
-  UnlockSound = loadSound('https://dl.dropboxusercontent.com/s/n5rwsqz8gsbgywi/unlocking%20.mp3?dl=0');
- 
     //Open Fridge
   Fridge_O = loadImage('https://dl.dropboxusercontent.com/s/vxtevd9do596m2e/Fridge%20Open.png?dl=0');
-  
-  OFridgeSound = loadSound('https://dl.dropboxusercontent.com/s/l2e74ji1zuzzr8u/Fridge%20.mp3?dl=0');
- 
-  CFridgeSound = loadSound('https://dl.dropboxusercontent.com/s/ugk9lhquz6v9nho/Fridge%20close.mp3?dl=0');
-  
+    
     //Far-away image of the Piano clue.
   Small_Note = loadImage('https://dl.dropboxusercontent.com/s/d27j93z57dls3e6/Note.png?dl=0');
  
