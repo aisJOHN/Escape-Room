@@ -1,9 +1,3 @@
-var SwitchSound
-var GlassSound
-var UnlockSound
-var OFridgeSound
-var CFridgeSound
-
 function preload()
 {
   // Title Screen Image
