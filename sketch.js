@@ -1449,7 +1449,11 @@ function canvas4()
       
       if (mouseIsPressed == true)
       { 
-        SCanvas4 = 5;
+       if (GlassSound.isPlaying() == false)
+       {
+         GlassSound.play();
+       }
+         SCanvas4 = 5;
       }
     }
     
@@ -1472,11 +1476,7 @@ function canvas4()
     //Here, the key is accessable. The player just needs to click on it to have it enter their inventory.
   if (SCanvas4 == 5)
   {
-    if (GlassSound.isPlaying() == false)
-    {
-      GlassSound.play();
-      GlassSound.currentTime = 4;
-    }
+    
     Inventory();
  
     image(Sink,0,0,800,600);
