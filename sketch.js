@@ -1366,24 +1366,18 @@ function canvas4()
       cursor(HAND);
       
       //The use of Light Lock is to to limit Room. Without it, one click of the lightswitch could make Room equal 11. Therefore, LgihtLock makes it so that the variable increases and decreases once per click. The use of the Room variable is to provide consistency in the game for the dark kitchen and the light kitchen.
-      if (mouseIsPressed == true && LightLock == false && Room == 0)
+      if (mouseIsPressed == true && LightLock == false && Room == 0 && SwitchSound.isPlaying() == false)
       {
-      	if (SwitchSound.isPlaying() == false)
-      	{
-      	  SwitchSound.currentTime = 7
-      	  SwitchSound.play()
-      	}
+        SwitchSound.currentTime = 7;
+        SwitchSound.play();
         SCanvas4 = 3;
         Room = Room + 1;
       }
       
-      else if (mouseIsPressed == true && LightLock == false && Room == 1)
+      else if (mouseIsPressed == true && LightLock == false && Room == 1 && SwitchSound.isPlaying() == false)
       {
-        if (SwitchSound.isPlaying() == false)
-      	{
-      	  SwitchSound.currentTime = 7
-      	  SwitchSound.play()
-      	}
+        SwitchSound.currentTime = 7;
+        SwitchSound.play();
         SCanvas4 = 0;
         Room = Room - 1;
       }
