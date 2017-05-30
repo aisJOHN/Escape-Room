@@ -153,7 +153,7 @@ function setup()
   Left = false;
   
   //Bedroom variables
-  canvas = 1;
+  canvas = 0;
   
   SCanvas1 = 0;
   WORD = "";
@@ -288,7 +288,20 @@ function setup()
 function draw()
 {  
   //I must hide the sliders for the other canvases.
-  if (canvas == 1)
+  if (canvas == 0)
+  {
+   canvas0();
+    Number1.hide();
+    Number2.hide();
+    Number3.hide();
+ 
+    selectionBox.hide();
+    selectionBox2.hide();
+    selectionBox3.hide();
+    selectionBox4.hide();
+  }
+  
+  else if (canvas == 1)
   {     
     canvas1();
     Number1.hide();
@@ -365,7 +378,7 @@ function draw()
   
   else
   {
-    canvas = 1;
+    canvas = 0;
   }
   
   fill(0,0,0);
@@ -379,6 +392,23 @@ function draw()
  
   Background_Music.setVolume(((VolumeControl.value()) * 0.01));
 }
+ 
+function canvas0()
+{
+  image(Introduction,0,0,800,600);
+  cursor(ARROW);
+  
+  if (mouseX > 343 && mouseX < 469 && mouseY > 333 && mouseY < 350)
+  {
+    cursor(HAND);
+	
+if (mouseIsPressed == true)
+    {
+      canvas = 1;
+    }
+  }
+}
+
  
 function canvas1()
 {
