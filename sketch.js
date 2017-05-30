@@ -117,6 +117,12 @@ function preload()
   Victory_1 = loadImage('https://dl.dropboxusercontent.com/s/vxbwou8olg8p082/Victory%201.png?dl=0');
  
   Victory_2 = loadImage('https://dl.dropboxusercontent.com/s/y9kx3jkyej1stug/Victory%202.png?dl=0');
+  
+  SwitchSound = loadSound('https://dl.dropboxusercontent.com/s/x4vhpc58kpltovf/Swtich%20.mp3?dl=0');
+  GlassSound = loadSound('https://dl.dropboxusercontent.com/s/jyda0u7g5s2flw2/Glass.mp3?dl=0');
+  UnlockSound = loadSound('https://dl.dropboxusercontent.com/s/n5rwsqz8gsbgywi/unlocking%20.mp3?dl=0');
+  OFridgeSound = loadSound('https://dl.dropboxusercontent.com/s/l2e74ji1zuzzr8u/Fridge%20.mp3?dl=0');
+  CFridgeSound = loadSound('https://dl.dropboxusercontent.com/s/ugk9lhquz6v9nho/Fridge%20close.mp3?dl=0');
 }
  
 function setup()
